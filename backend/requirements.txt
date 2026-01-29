@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+sqlalchemy
+passlib[bcrypt]
+python-jose[cryptography]
+python-multipart
+beautifulsoup4
+plotly
+pandas
+requests
+httpx
+playwright
+nest_asyncio

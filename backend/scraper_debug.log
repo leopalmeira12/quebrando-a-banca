@@ -1,0 +1,1341 @@
+2026-01-27 22:39:29,498 - INFO - Iniciando ciclo de atualização para 11 times.
+2026-01-27 22:39:29,499 - INFO - Iniciando busca Google para: Atlético-MG
+2026-01-27 22:39:37,592 - INFO - Resultado final para Atlético-MG: Não identificado
+2026-01-27 22:39:37,682 - INFO - Iniciando busca Google para: Grêmio
+2026-01-27 22:39:42,506 - INFO - Resultado final para Grêmio: Não identificado
+2026-01-27 22:39:42,571 - INFO - Iniciando busca Google para: São Paulo
+2026-01-27 22:39:48,188 - INFO - Resultado final para São Paulo: Não identificado
+2026-01-27 22:39:48,254 - INFO - Ciclo de atualização finalizado. 0 times processados.
+2026-01-27 22:40:07,072 - INFO - Iniciando ciclo de atualização para 11 times.
+2026-01-27 22:40:07,072 - INFO - Iniciando busca Google para: Palmeiras
+2026-01-27 22:40:11,886 - INFO - Resultado final para Palmeiras: Não identificado
+2026-01-27 22:40:11,954 - INFO - Iniciando busca Google para: São Paulo
+2026-01-27 22:40:17,614 - INFO - Resultado final para São Paulo: Não identificado
+2026-01-27 22:40:17,679 - INFO - Iniciando busca Google para: Corinthians
+2026-01-27 22:40:22,348 - INFO - Resultado final para Corinthians: Não identificado
+2026-01-27 22:40:22,417 - INFO - Iniciando busca Google para: Barcelona
+2026-01-27 22:40:27,066 - INFO - Resultado final para Barcelona: Não identificado
+2026-01-27 22:40:27,129 - INFO - Ciclo de atualização finalizado. 0 times processados.
+2026-01-27 22:40:45,783 - INFO - Iniciando ciclo de atualização para 11 times.
+2026-01-27 22:40:45,783 - INFO - Iniciando busca Google para: Corinthians
+2026-01-27 22:40:50,878 - INFO - Resultado final para Corinthians: Não identificado
+2026-01-27 22:40:50,946 - INFO - Iniciando busca Google para: Grêmio
+2026-01-27 22:40:55,676 - INFO - Resultado final para Grêmio: Não identificado
+2026-01-27 22:40:55,755 - INFO - Iniciando busca Google para: Man City
+2026-01-27 22:41:01,370 - INFO - Resultado final para Man City: Não identificado
+2026-01-27 22:41:01,442 - INFO - Ciclo de atualização finalizado. 0 times processados.
+2026-01-27 22:42:26,309 - INFO - \U0001f552 INICIANDO VARREDURA PROGRAMADA AGENDADA (4h)...
+2026-01-27 22:42:26,313 - INFO - Iniciando ciclo de atualização para 11 times.
+2026-01-27 22:42:26,313 - INFO - Iniciando busca Google para: Barcelona
+2026-01-27 22:42:30,922 - INFO - Resultado final para Barcelona: Não identificado
+2026-01-27 22:42:30,994 - INFO - Iniciando busca Google para: Real Madrid
+2026-01-27 22:42:35,533 - INFO - Resultado final para Real Madrid: Não identificado
+2026-01-27 22:42:35,599 - INFO - Iniciando busca Google para: São Paulo
+2026-01-27 22:42:40,773 - INFO - Resultado final para São Paulo: Não identificado
+2026-01-27 22:42:40,844 - INFO - Ciclo de atualização finalizado. 0 times processados.
+2026-01-27 22:42:40,844 - INFO - \u2705 Varredura programada concluída. Próxima em 4 horas.
+2026-01-27 22:51:34,634 - INFO - \U0001f552 INICIANDO VARREDURA PROGRAMADA AGENDADA (4h)...
+2026-01-27 22:51:34,638 - INFO - Iniciando ciclo de atualização para 11 times.
+2026-01-27 22:51:34,638 - INFO - Iniciando busca Google para: Man City
+2026-01-27 22:51:39,614 - INFO - Resultado final para Man City: Não identificado
+2026-01-27 22:51:39,680 - INFO - Iniciando busca Google para: Atlético-MG
+2026-01-27 22:51:44,728 - INFO - Resultado final para Atlético-MG: Não identificado
+2026-01-27 22:51:44,792 - INFO - Iniciando busca Google para: Corinthians
+2026-01-27 22:51:49,786 - INFO - Resultado final para Corinthians: Não identificado
+2026-01-27 22:51:49,848 - INFO - Ciclo de atualização finalizado. 0 times processados.
+2026-01-27 22:51:49,849 - INFO - \u2705 Varredura programada concluída. Próxima em 4 horas.
+2026-01-27 22:53:54,375 - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Roaming\Python\Python314\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2026-01-27 22:53:54,606 - INFO - Iniciando ciclo de atualização para 11 times.
+2026-01-27 22:53:54,606 - INFO - Iniciando busca Google para: Barcelona
+2026-01-27 22:53:59,536 - INFO - Resultado final para Barcelona: Não identificado
+2026-01-27 22:53:59,640 - INFO - Iniciando busca Google para: Corinthians
+2026-01-27 22:54:04,684 - INFO - Resultado final para Corinthians: Não identificado
+2026-01-27 22:54:04,749 - INFO - Iniciando busca Google para: Real Madrid
+2026-01-27 22:54:10,921 - INFO - Resultado final para Real Madrid: Não identificado
+2026-01-27 22:54:10,988 - INFO - Ciclo de atualização finalizado. 0 times processados.
+2026-01-27 23:00:14,670 - INFO - \U0001f552 INICIANDO VARREDURA PROGRAMADA AGENDADA (4h)...
+2026-01-27 23:00:14,675 - INFO - Iniciando ciclo de atualização para 11 times.
+2026-01-27 23:00:14,675 - INFO - Iniciando busca Google para: Palmeiras
+2026-01-27 23:00:19,544 - INFO - Resultado final para Palmeiras: Não identificado
+2026-01-27 23:00:19,608 - INFO - Iniciando busca Google para: Corinthians
+2026-01-27 23:00:24,525 - INFO - Resultado final para Corinthians: Não identificado
+2026-01-27 23:00:24,591 - INFO - Iniciando busca Google para: Man City
+2026-01-27 23:00:29,337 - INFO - Resultado final para Man City: Não identificado
+2026-01-27 23:00:29,405 - INFO - Iniciando busca Google para: Flamengo
+2026-01-27 23:00:34,384 - INFO - Resultado final para Flamengo: Não identificado
+2026-01-27 23:00:34,444 - INFO - Ciclo de atualização finalizado. 0 times processados.
+2026-01-27 23:00:34,444 - INFO - \u2705 Varredura programada concluída. Próxima em 4 horas.
+2026-01-27 23:02:39,257 - INFO - \U0001f552 INICIANDO VARREDURA PROGRAMADA AGENDADA (4h)...
+2026-01-27 23:02:39,261 - INFO - Iniciando ciclo de atualização para 11 times.
+2026-01-27 23:02:39,261 - INFO - Iniciando busca Google para: Cruzeiro
+2026-01-27 23:02:44,374 - INFO - Resultado final para Cruzeiro: Não identificado
+2026-01-27 23:02:44,443 - INFO - Iniciando busca Google para: Flamengo
+2026-01-27 23:02:49,243 - INFO - Resultado final para Flamengo: Não identificado
+2026-01-27 23:02:49,310 - INFO - Iniciando busca Google para: Barcelona
+2026-01-27 23:02:54,325 - INFO - Resultado final para Barcelona: Não identificado
+2026-01-27 23:02:54,392 - INFO - Iniciando busca Google para: Atlético-MG
+2026-01-27 23:02:57,247 - ERROR - Erro crítico ao buscar Atlético-MG: Page.goto: Target page, context or browser has been closed
+Call log:
+  - navigating to "https://www.google.com/search?q=t%C3%A9cnico%20do%20Atl%C3%A9tico-MG", waiting until "load"
+
+2026-01-27 23:02:57,396 - INFO - Ciclo de atualização finalizado. 0 times processados.
+2026-01-27 23:02:58,649 - INFO - \U0001f552 INICIANDO VARREDURA PROGRAMADA AGENDADA (4h)...
+2026-01-27 23:02:58,653 - INFO - Iniciando ciclo de atualização para 11 times.
+2026-01-27 23:02:58,653 - INFO - Iniciando busca Google para: Atlético-MG
+2026-01-27 23:03:03,525 - INFO - Resultado final para Atlético-MG: Não identificado
+2026-01-27 23:03:03,588 - INFO - Iniciando busca Google para: Grêmio
+2026-01-27 23:03:08,549 - INFO - Resultado final para Grêmio: Não identificado
+2026-01-27 23:03:08,618 - INFO - Iniciando busca Google para: Real Madrid
+2026-01-27 23:03:13,694 - INFO - Resultado final para Real Madrid: Não identificado
+2026-01-27 23:03:13,759 - INFO - Iniciando busca Google para: Barcelona
+2026-01-27 23:03:18,694 - INFO - Resultado final para Barcelona: Não identificado
+2026-01-27 23:03:18,759 - INFO - Ciclo de atualização finalizado. 0 times processados.
+2026-01-27 23:03:18,759 - INFO - \u2705 Varredura programada concluída. Próxima em 4 horas.
+2026-01-27 23:05:41,579 - INFO - \U0001f552 INICIANDO VARREDURA PROGRAMADA AGENDADA (4h)...
+2026-01-27 23:05:41,584 - INFO - Iniciando ciclo de atualização para 11 times.
+2026-01-27 23:05:41,584 - INFO - Iniciando busca Google para: Man City
+2026-01-27 23:05:46,684 - INFO - Resultado final para Man City: Não identificado
+2026-01-27 23:05:46,761 - INFO - Ciclo de atualização finalizado. 0 times processados.
+2026-01-27 23:05:46,761 - INFO - \u2705 Varredura programada concluída. Próxima em 4 horas.
+2026-01-27 23:13:28,272 - INFO - \U0001f552 INICIANDO VARREDURA PROGRAMADA AGENDADA (4h)...
+2026-01-27 23:13:28,275 - INFO - Iniciando ciclo de atualização para 11 times.
+2026-01-27 23:13:28,275 - INFO - Iniciando busca Google para: Barcelona
+2026-01-27 23:13:33,390 - INFO - Resultado final para Barcelona: Não identificado
+2026-01-27 23:13:33,457 - INFO - Iniciando busca Google para: Palmeiras
+2026-01-27 23:13:38,612 - INFO - Resultado final para Palmeiras: Não identificado
+2026-01-27 23:13:38,681 - INFO - Iniciando busca Google para: Atlético-MG
+2026-01-27 23:13:43,820 - INFO - Resultado final para Atlético-MG: Não identificado
+2026-01-27 23:13:43,891 - INFO - Ciclo de atualização finalizado. 0 times processados.
+2026-01-27 23:13:43,891 - INFO - \u2705 Varredura programada concluída. Próxima em 4 horas.
+2026-01-27 23:13:54,212 - INFO - \U0001f552 INICIANDO VARREDURA PROGRAMADA AGENDADA (4h)...
+2026-01-27 23:13:54,216 - INFO - Iniciando ciclo de atualização para 11 times.
+2026-01-27 23:13:54,216 - INFO - Iniciando busca Google para: Real Madrid
+2026-01-27 23:13:59,273 - INFO - Resultado final para Real Madrid: Não identificado
+2026-01-27 23:13:59,339 - INFO - Iniciando busca Google para: Cruzeiro
+2026-01-27 23:14:04,265 - INFO - Resultado final para Cruzeiro: Não identificado
+2026-01-27 23:14:04,336 - INFO - Ciclo de atualização finalizado. 0 times processados.
+2026-01-27 23:14:04,336 - INFO - \u2705 Varredura programada concluída. Próxima em 4 horas.
+2026-01-27 23:15:00,653 - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Roaming\Python\Python314\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2026-01-27 23:15:00,881 - INFO - Iniciando ciclo de atualização para 11 times.
+2026-01-27 23:15:00,882 - INFO - Iniciando busca Google para: Internacional
+2026-01-27 23:15:06,185 - INFO - Resultado final para Internacional: Não identificado
+2026-01-27 23:15:06,254 - INFO - Ciclo de atualização finalizado. 0 times processados.
+2026-01-27 23:44:40,179 - INFO - \U0001f552 INICIANDO VARREDURA PROGRAMADA AGENDADA (4h)...
+2026-01-27 23:44:40,182 - INFO - Iniciando ciclo de atualização para 11 times.
+2026-01-27 23:44:40,183 - INFO - Iniciando busca Google para: Palmeiras
+2026-01-27 23:44:48,192 - INFO - Resultado final para Palmeiras: Não identificado
+2026-01-27 23:44:48,260 - INFO - Iniciando busca Google para: São Paulo
+2026-01-27 23:44:53,636 - INFO - Resultado final para São Paulo: Não identificado
+2026-01-27 23:44:53,702 - INFO - Ciclo de atualização finalizado. 0 times processados.
+2026-01-27 23:44:53,702 - INFO - \u2705 Varredura programada concluída. Próxima em 4 horas.
+2026-01-27 23:49:25,032 - INFO - \U0001f552 INICIANDO VARREDURA PROGRAMADA AGENDADA (4h)...
+2026-01-27 23:49:25,036 - INFO - Iniciando ciclo de atualização para 11 times.
+2026-01-27 23:49:25,036 - INFO - Iniciando busca Google para: Barcelona
+2026-01-27 23:49:30,023 - INFO - Resultado final para Barcelona: Não identificado
+2026-01-27 23:49:30,101 - INFO - Iniciando busca Google para: Atlético-MG
+2026-01-27 23:49:35,025 - INFO - Resultado final para Atlético-MG: Não identificado
+2026-01-27 23:49:35,094 - INFO - Iniciando busca Google para: São Paulo
+2026-01-27 23:49:40,008 - INFO - Resultado final para São Paulo: Não identificado
+2026-01-27 23:49:40,075 - INFO - Iniciando busca Google para: Man City
+2026-01-27 23:49:45,385 - INFO - Resultado final para Man City: Não identificado
+2026-01-27 23:49:45,450 - INFO - Ciclo de atualização finalizado. 0 times processados.
+2026-01-27 23:49:45,451 - INFO - \u2705 Varredura programada concluída. Próxima em 4 horas.
+2026-01-27 23:50:40,711 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-95' coro=<Connection.run() done, defined at C:\Users\User\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_connection.py:305> exception=NotImplementedError()>
+Traceback (most recent call last):
+  File "C:\Python314\Lib\asyncio\tasks.py", line 289, in __step_run_and_handle_result
+    result = coro.send(None)
+  File "C:\Users\User\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_connection.py", line 312, in run
+    await self._transport.connect()
+  File "C:\Users\User\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_transport.py", line 133, in connect
+    raise exc
+  File "C:\Users\User\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "C:\Python314\Lib\asyncio\subprocess.py", line 224, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        stderr=stderr, **kwds)
+        ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\asyncio\base_events.py", line 1798, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        protocol, popen_args, False, stdin, stdout, stderr,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        bufsize, **kwargs)
+        ^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\asyncio\base_events.py", line 533, in _make_subprocess_transport
+    raise NotImplementedError
+NotImplementedError
+2026-01-27 23:50:54,640 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-98' coro=<Connection.run() done, defined at C:\Users\User\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_connection.py:305> exception=NotImplementedError()>
+Traceback (most recent call last):
+  File "C:\Python314\Lib\asyncio\tasks.py", line 289, in __step_run_and_handle_result
+    result = coro.send(None)
+  File "C:\Users\User\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_connection.py", line 312, in run
+    await self._transport.connect()
+  File "C:\Users\User\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_transport.py", line 133, in connect
+    raise exc
+  File "C:\Users\User\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "C:\Python314\Lib\asyncio\subprocess.py", line 224, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        stderr=stderr, **kwds)
+        ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\asyncio\base_events.py", line 1798, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        protocol, popen_args, False, stdin, stdout, stderr,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        bufsize, **kwargs)
+        ^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\asyncio\base_events.py", line 533, in _make_subprocess_transport
+    raise NotImplementedError
+NotImplementedError
+2026-01-27 23:50:58,808 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-101' coro=<Connection.run() done, defined at C:\Users\User\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_connection.py:305> exception=NotImplementedError()>
+Traceback (most recent call last):
+  File "C:\Python314\Lib\asyncio\tasks.py", line 289, in __step_run_and_handle_result
+    result = coro.send(None)
+  File "C:\Users\User\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_connection.py", line 312, in run
+    await self._transport.connect()
+  File "C:\Users\User\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_transport.py", line 133, in connect
+    raise exc
+  File "C:\Users\User\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "C:\Python314\Lib\asyncio\subprocess.py", line 224, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        stderr=stderr, **kwds)
+        ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\asyncio\base_events.py", line 1798, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        protocol, popen_args, False, stdin, stdout, stderr,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        bufsize, **kwargs)
+        ^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\asyncio\base_events.py", line 533, in _make_subprocess_transport
+    raise NotImplementedError
+NotImplementedError
+2026-01-27 23:51:39,947 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-112' coro=<Connection.run() done, defined at C:\Users\User\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_connection.py:305> exception=NotImplementedError()>
+Traceback (most recent call last):
+  File "C:\Python314\Lib\asyncio\tasks.py", line 289, in __step_run_and_handle_result
+    result = coro.send(None)
+  File "C:\Users\User\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_connection.py", line 312, in run
+    await self._transport.connect()
+  File "C:\Users\User\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_transport.py", line 133, in connect
+    raise exc
+  File "C:\Users\User\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "C:\Python314\Lib\asyncio\subprocess.py", line 224, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        stderr=stderr, **kwds)
+        ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\asyncio\base_events.py", line 1798, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        protocol, popen_args, False, stdin, stdout, stderr,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        bufsize, **kwargs)
+        ^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\asyncio\base_events.py", line 533, in _make_subprocess_transport
+    raise NotImplementedError
+NotImplementedError
+2026-01-27 23:51:45,067 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-115' coro=<Connection.run() done, defined at C:\Users\User\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_connection.py:305> exception=NotImplementedError()>
+Traceback (most recent call last):
+  File "C:\Python314\Lib\asyncio\tasks.py", line 289, in __step_run_and_handle_result
+    result = coro.send(None)
+  File "C:\Users\User\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_connection.py", line 312, in run
+    await self._transport.connect()
+  File "C:\Users\User\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_transport.py", line 133, in connect
+    raise exc
+  File "C:\Users\User\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "C:\Python314\Lib\asyncio\subprocess.py", line 224, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        stderr=stderr, **kwds)
+        ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\asyncio\base_events.py", line 1798, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        protocol, popen_args, False, stdin, stdout, stderr,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        bufsize, **kwargs)
+        ^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\asyncio\base_events.py", line 533, in _make_subprocess_transport
+    raise NotImplementedError
+NotImplementedError
+2026-01-27 23:58:07,818 - INFO - \U0001f552 INICIANDO VARREDURA PROGRAMADA AGENDADA (4h)...
+2026-01-27 23:58:07,822 - INFO - Iniciando ciclo de atualização para 11 times.
+2026-01-27 23:58:07,822 - INFO - Iniciando busca Google para: Atlético-MG
+2026-01-27 23:58:12,978 - INFO - Resultado final para Atlético-MG: Não identificado
+2026-01-27 23:58:13,044 - INFO - Ciclo de atualização finalizado. 0 times processados.
+2026-01-27 23:58:13,044 - INFO - \u2705 Varredura programada concluída. Próxima em 4 horas.
+2026-01-27 23:58:35,153 - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Roaming\Python\Python314\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2026-01-27 23:58:35,386 - INFO - Iniciando ciclo de atualização para 11 times.
+2026-01-27 23:58:35,386 - INFO - Iniciando busca Google para: Internacional
+2026-01-27 23:58:39,978 - INFO - Resultado final para Internacional: Não identificado
+2026-01-27 23:58:40,060 - INFO - Iniciando busca Google para: Grêmio
+2026-01-27 23:58:44,562 - INFO - Resultado final para Grêmio: Não identificado
+2026-01-27 23:58:44,632 - INFO - Ciclo de atualização finalizado. 0 times processados.
+2026-01-28 00:05:16,364 - INFO - \U0001f552 INICIANDO VARREDURA PROGRAMADA AGENDADA (4h)...
+2026-01-28 00:05:16,368 - INFO - Iniciando ciclo de atualização para 11 times.
+2026-01-28 00:05:16,368 - INFO - Ciclo de atualização finalizado. 0 times processados.
+2026-01-28 00:05:16,368 - INFO - \u2705 Varredura programada concluída. Próxima em 4 horas.
+2026-01-28 00:05:33,610 - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Roaming\Python\Python314\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2026-01-28 00:05:33,839 - INFO - Iniciando ciclo de atualização para 11 times.
+2026-01-28 00:05:33,839 - INFO - Iniciando busca Google para: São Paulo
+2026-01-28 00:05:41,475 - INFO - Resultado final para São Paulo: Não identificado
+2026-01-28 00:05:41,547 - INFO - Iniciando busca Google para: Palmeiras
+2026-01-28 00:05:45,917 - INFO - Resultado final para Palmeiras: Não identificado
+2026-01-28 00:05:45,985 - INFO - Iniciando busca Google para: Barcelona
+2026-01-28 00:05:51,005 - INFO - Resultado final para Barcelona: Não identificado
+2026-01-28 00:05:51,072 - INFO - Iniciando busca Google para: Cruzeiro
+2026-01-28 00:05:55,315 - INFO - Resultado final para Cruzeiro: Não identificado
+2026-01-28 00:05:55,384 - INFO - Ciclo de atualização finalizado. 0 times processados.
+2026-01-28 00:06:17,632 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-96' coro=<Connection.run() done, defined at C:\Users\User\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_connection.py:305> exception=NotImplementedError()>
+Traceback (most recent call last):
+  File "C:\Python314\Lib\asyncio\tasks.py", line 289, in __step_run_and_handle_result
+    result = coro.send(None)
+  File "C:\Users\User\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_connection.py", line 312, in run
+    await self._transport.connect()
+  File "C:\Users\User\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_transport.py", line 133, in connect
+    raise exc
+  File "C:\Users\User\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "C:\Python314\Lib\asyncio\subprocess.py", line 224, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        stderr=stderr, **kwds)
+        ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\asyncio\base_events.py", line 1798, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        protocol, popen_args, False, stdin, stdout, stderr,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        bufsize, **kwargs)
+        ^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\asyncio\base_events.py", line 533, in _make_subprocess_transport
+    raise NotImplementedError
+NotImplementedError
+2026-01-28 00:06:18,828 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-99' coro=<Connection.run() done, defined at C:\Users\User\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_connection.py:305> exception=NotImplementedError()>
+Traceback (most recent call last):
+  File "C:\Python314\Lib\asyncio\tasks.py", line 289, in __step_run_and_handle_result
+    result = coro.send(None)
+  File "C:\Users\User\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_connection.py", line 312, in run
+    await self._transport.connect()
+  File "C:\Users\User\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_transport.py", line 133, in connect
+    raise exc
+  File "C:\Users\User\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "C:\Python314\Lib\asyncio\subprocess.py", line 224, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        stderr=stderr, **kwds)
+        ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\asyncio\base_events.py", line 1798, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        protocol, popen_args, False, stdin, stdout, stderr,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        bufsize, **kwargs)
+        ^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\asyncio\base_events.py", line 533, in _make_subprocess_transport
+    raise NotImplementedError
+NotImplementedError
+2026-01-28 00:06:19,638 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-102' coro=<Connection.run() done, defined at C:\Users\User\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_connection.py:305> exception=NotImplementedError()>
+Traceback (most recent call last):
+  File "C:\Python314\Lib\asyncio\tasks.py", line 289, in __step_run_and_handle_result
+    result = coro.send(None)
+  File "C:\Users\User\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_connection.py", line 312, in run
+    await self._transport.connect()
+  File "C:\Users\User\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_transport.py", line 133, in connect
+    raise exc
+  File "C:\Users\User\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "C:\Python314\Lib\asyncio\subprocess.py", line 224, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        stderr=stderr, **kwds)
+        ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\asyncio\base_events.py", line 1798, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        protocol, popen_args, False, stdin, stdout, stderr,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        bufsize, **kwargs)
+        ^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\asyncio\base_events.py", line 533, in _make_subprocess_transport
+    raise NotImplementedError
+NotImplementedError
+2026-01-28 00:06:30,408 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-108' coro=<Connection.run() done, defined at C:\Users\User\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_connection.py:305> exception=NotImplementedError()>
+Traceback (most recent call last):
+  File "C:\Python314\Lib\asyncio\tasks.py", line 289, in __step_run_and_handle_result
+    result = coro.send(None)
+  File "C:\Users\User\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_connection.py", line 312, in run
+    await self._transport.connect()
+  File "C:\Users\User\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_transport.py", line 133, in connect
+    raise exc
+  File "C:\Users\User\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "C:\Python314\Lib\asyncio\subprocess.py", line 224, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        stderr=stderr, **kwds)
+        ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\asyncio\base_events.py", line 1798, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        protocol, popen_args, False, stdin, stdout, stderr,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        bufsize, **kwargs)
+        ^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\asyncio\base_events.py", line 533, in _make_subprocess_transport
+    raise NotImplementedError
+NotImplementedError
+2026-01-28 00:07:26,142 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-115' coro=<Connection.run() done, defined at C:\Users\User\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_connection.py:305> exception=NotImplementedError()>
+Traceback (most recent call last):
+  File "C:\Python314\Lib\asyncio\tasks.py", line 289, in __step_run_and_handle_result
+    result = coro.send(None)
+  File "C:\Users\User\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_connection.py", line 312, in run
+    await self._transport.connect()
+  File "C:\Users\User\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_transport.py", line 133, in connect
+    raise exc
+  File "C:\Users\User\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "C:\Python314\Lib\asyncio\subprocess.py", line 224, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        stderr=stderr, **kwds)
+        ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\asyncio\base_events.py", line 1798, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        protocol, popen_args, False, stdin, stdout, stderr,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        bufsize, **kwargs)
+        ^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\asyncio\base_events.py", line 533, in _make_subprocess_transport
+    raise NotImplementedError
+NotImplementedError
+2026-01-28 00:11:38,280 - INFO - \U0001f552 INICIANDO VARREDURA PROGRAMADA AGENDADA (4h)...
+2026-01-28 00:11:38,283 - INFO - Iniciando ciclo de atualização para 11 times.
+2026-01-28 00:11:38,283 - INFO - Iniciando busca Google para: Real Madrid
+2026-01-28 00:11:42,798 - INFO - Resultado final para Real Madrid: Não identificado
+2026-01-28 00:11:42,869 - INFO - Ciclo de atualização finalizado. 0 times processados.
+2026-01-28 00:11:42,870 - INFO - \u2705 Varredura programada concluída. Próxima em 4 horas.
+2026-01-28 00:15:56,867 - INFO - \U0001f552 INICIANDO VARREDURA PROGRAMADA AGENDADA (4h)...
+2026-01-28 00:15:56,871 - INFO - Iniciando ciclo de atualização para 11 times.
+2026-01-28 00:15:56,871 - INFO - Iniciando busca Google para: Cruzeiro
+2026-01-28 00:16:01,431 - INFO - Resultado final para Cruzeiro: Não identificado
+2026-01-28 00:16:01,500 - INFO - Iniciando busca Google para: Barcelona
+2026-01-28 00:16:05,775 - INFO - Resultado final para Barcelona: Não identificado
+2026-01-28 00:16:05,856 - INFO - Ciclo de atualização finalizado. 0 times processados.
+2026-01-28 00:16:09,909 - INFO - \u2705 Varredura programada concluída. Próxima em 4 horas.
+2026-01-28 00:22:04,411 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-57' coro=<Connection.run() done, defined at C:\Users\User\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_connection.py:305> exception=NotImplementedError()>
+Traceback (most recent call last):
+  File "C:\Python314\Lib\asyncio\tasks.py", line 289, in __step_run_and_handle_result
+    result = coro.send(None)
+  File "C:\Users\User\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_connection.py", line 312, in run
+    await self._transport.connect()
+  File "C:\Users\User\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_transport.py", line 133, in connect
+    raise exc
+  File "C:\Users\User\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "C:\Python314\Lib\asyncio\subprocess.py", line 224, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        stderr=stderr, **kwds)
+        ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\asyncio\base_events.py", line 1798, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        protocol, popen_args, False, stdin, stdout, stderr,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        bufsize, **kwargs)
+        ^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\asyncio\base_events.py", line 533, in _make_subprocess_transport
+    raise NotImplementedError
+NotImplementedError
+2026-01-28 00:28:09,675 - INFO - \U0001f552 INICIANDO VARREDURA PROGRAMADA AGENDADA (4h)...
+2026-01-28 00:28:09,679 - INFO - Iniciando ciclo de atualização para 11 times.
+2026-01-28 00:28:09,679 - INFO - Iniciando busca Google para: Flamengo
+2026-01-28 00:28:17,507 - INFO - Resultado final para Flamengo: Não identificado
+2026-01-28 00:28:17,587 - INFO - Iniciando busca Google para: Man City
+2026-01-28 00:28:21,964 - INFO - Resultado final para Man City: Não identificado
+2026-01-28 00:28:22,027 - INFO - Iniciando busca Google para: Internacional
+2026-01-28 00:28:26,411 - INFO - Resultado final para Internacional: Não identificado
+2026-01-28 00:28:26,476 - INFO - Ciclo de atualização finalizado. 0 times processados.
+2026-01-28 00:28:26,476 - INFO - \u2705 Varredura programada concluída. Próxima em 4 horas.
+2026-01-28 00:34:37,379 - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Roaming\Python\Python314\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2026-01-28 00:34:37,609 - INFO - Iniciando ciclo de atualização para 11 times.
+2026-01-28 00:34:37,609 - INFO - Iniciando busca Google para: Grêmio
+2026-01-28 00:34:45,136 - INFO - Resultado final para Grêmio: Não identificado
+2026-01-28 00:34:45,209 - INFO - Iniciando busca Google para: Real Madrid
+2026-01-28 00:34:49,971 - INFO - Resultado final para Real Madrid: Não identificado
+2026-01-28 00:34:50,037 - INFO - Iniciando busca Google para: São Paulo
+2026-01-28 00:34:54,377 - INFO - Resultado final para São Paulo: Não identificado
+2026-01-28 00:34:54,450 - INFO - Iniciando busca Google para: Internacional
+2026-01-28 00:34:58,654 - INFO - Resultado final para Internacional: Não identificado
+2026-01-28 00:34:58,727 - INFO - Ciclo de atualização finalizado. 0 times processados.
+2026-01-28 00:39:53,929 - INFO - \U0001f552 INICIANDO VARREDURA PROGRAMADA AGENDADA (4h)...
+2026-01-28 00:39:53,932 - INFO - Iniciando ciclo de atualização para 11 times.
+2026-01-28 00:39:53,933 - INFO - Iniciando busca Google para: São Paulo
+2026-01-28 00:39:58,741 - INFO - Resultado final para São Paulo: Não identificado
+2026-01-28 00:39:58,839 - INFO - Iniciando busca Google para: Real Madrid
+2026-01-28 00:40:03,579 - INFO - Resultado final para Real Madrid: Não identificado
+2026-01-28 00:40:03,646 - INFO - Ciclo de atualização finalizado. 0 times processados.
+2026-01-28 00:40:03,647 - INFO - \u2705 Varredura programada concluída. Próxima em 4 horas.
+2026-01-28 00:40:48,019 - INFO - \U0001f552 INICIANDO VARREDURA PROGRAMADA AGENDADA (4h)...
+2026-01-28 00:40:48,023 - INFO - Iniciando ciclo de atualização para 11 times.
+2026-01-28 00:40:48,023 - INFO - Iniciando busca Google para: São Paulo
+2026-01-28 00:40:53,054 - INFO - Resultado final para São Paulo: Não identificado
+2026-01-28 00:40:53,125 - INFO - Iniciando busca Google para: Real Madrid
+2026-01-28 00:40:57,740 - INFO - Resultado final para Real Madrid: Não identificado
+2026-01-28 00:40:57,809 - INFO - Iniciando busca Google para: Palmeiras
+2026-01-28 00:41:02,416 - INFO - Resultado final para Palmeiras: Não identificado
+2026-01-28 00:41:02,481 - INFO - Ciclo de atualização finalizado. 0 times processados.
+2026-01-28 00:41:06,851 - INFO - \u2705 Varredura programada concluída. Próxima em 4 horas.
+2026-01-28 00:42:11,400 - INFO - \U0001f552 INICIANDO VARREDURA PROGRAMADA AGENDADA (4h)...
+2026-01-28 00:42:11,404 - INFO - Iniciando ciclo de atualização para 11 times.
+2026-01-28 00:42:11,404 - INFO - Iniciando busca Google para: Barcelona
+2026-01-28 00:42:16,495 - INFO - Resultado final para Barcelona: Não identificado
+2026-01-28 00:42:16,582 - INFO - Ciclo de atualização finalizado. 0 times processados.
+2026-01-28 00:42:17,668 - INFO - \u2705 Varredura programada concluída. Próxima em 4 horas.
+2026-01-28 00:43:19,494 - INFO - \U0001f552 INICIANDO VARREDURA PROGRAMADA AGENDADA (4h)...
+2026-01-28 00:43:19,498 - INFO - Iniciando ciclo de atualização para 11 times.
+2026-01-28 00:43:19,498 - INFO - Iniciando busca Google para: Flamengo
+2026-01-28 00:43:24,120 - INFO - Resultado final para Flamengo: Não identificado
+2026-01-28 00:43:24,186 - INFO - Iniciando busca Google para: Man City
+2026-01-28 00:43:29,067 - INFO - Resultado final para Man City: Não identificado
+2026-01-28 00:43:29,138 - INFO - Ciclo de atualização finalizado. 0 times processados.
+2026-01-28 00:43:29,139 - INFO - \u2705 Varredura programada concluída. Próxima em 4 horas.
+2026-01-28 00:43:35,737 - INFO - \U0001f552 INICIANDO VARREDURA PROGRAMADA AGENDADA (4h)...
+2026-01-28 00:43:35,741 - INFO - Iniciando ciclo de atualização para 11 times.
+2026-01-28 00:43:35,741 - INFO - Iniciando busca Google para: Palmeiras
+2026-01-28 00:43:40,880 - INFO - Resultado final para Palmeiras: Não identificado
+2026-01-28 00:43:40,945 - INFO - Iniciando busca Google para: Barcelona
+2026-01-28 00:43:45,786 - INFO - Resultado final para Barcelona: Não identificado
+2026-01-28 00:43:45,877 - INFO - Iniciando busca Google para: São Paulo
+2026-01-28 00:43:51,097 - INFO - Resultado final para São Paulo: Não identificado
+2026-01-28 00:43:51,167 - INFO - Iniciando busca Google para: Internacional
+2026-01-28 00:43:56,284 - INFO - Resultado final para Internacional: Não identificado
+2026-01-28 00:43:56,346 - INFO - Iniciando busca Google para: Cruzeiro
+2026-01-28 00:44:01,279 - INFO - Resultado final para Cruzeiro: Não identificado
+2026-01-28 00:44:01,348 - INFO - Ciclo de atualização finalizado. 0 times processados.
+2026-01-28 00:44:01,349 - INFO - \u2705 Varredura programada concluída. Próxima em 4 horas.
+2026-01-28 00:44:35,268 - INFO - \U0001f552 INICIANDO VARREDURA PROGRAMADA AGENDADA (4h)...
+2026-01-28 00:44:35,271 - INFO - Iniciando ciclo de atualização para 11 times.
+2026-01-28 00:44:35,271 - INFO - Ciclo de atualização finalizado. 0 times processados.
+2026-01-28 00:44:35,272 - INFO - \u2705 Varredura programada concluída. Próxima em 4 horas.
+2026-01-28 00:44:49,610 - INFO - \U0001f552 INICIANDO VARREDURA PROGRAMADA AGENDADA (4h)...
+2026-01-28 00:44:49,613 - INFO - Iniciando ciclo de atualização para 11 times.
+2026-01-28 00:44:49,613 - INFO - Iniciando busca Google para: Man City
+2026-01-28 00:44:54,449 - INFO - Resultado final para Man City: Não identificado
+2026-01-28 00:44:54,562 - INFO - Iniciando busca Google para: Palmeiras
+2026-01-28 00:44:59,649 - INFO - Resultado final para Palmeiras: Não identificado
+2026-01-28 00:44:59,719 - INFO - Iniciando busca Google para: Atlético-MG
+2026-01-28 00:45:04,224 - INFO - Resultado final para Atlético-MG: Não identificado
+2026-01-28 00:45:04,290 - INFO - Iniciando busca Google para: Internacional
+2026-01-28 00:45:09,052 - INFO - Resultado final para Internacional: Não identificado
+2026-01-28 00:45:09,117 - INFO - Ciclo de atualização finalizado. 0 times processados.
+2026-01-28 00:45:09,117 - INFO - \u2705 Varredura programada concluída. Próxima em 4 horas.
+2026-01-28 00:46:20,074 - INFO - \U0001f552 INICIANDO VARREDURA PROGRAMADA AGENDADA (4h)...
+2026-01-28 00:46:20,077 - INFO - Iniciando ciclo de atualização para 11 times.
+2026-01-28 00:46:20,077 - INFO - Ciclo de atualização finalizado. 0 times processados.
+2026-01-28 00:46:20,078 - INFO - \u2705 Varredura programada concluída. Próxima em 4 horas.
+2026-01-28 00:47:11,584 - INFO - \U0001f552 INICIANDO VARREDURA PROGRAMADA AGENDADA (4h)...
+2026-01-28 00:47:11,587 - INFO - Iniciando ciclo de atualização para 11 times.
+2026-01-28 00:47:11,587 - INFO - Iniciando busca Google para: Cruzeiro
+2026-01-28 00:47:16,321 - INFO - Resultado final para Cruzeiro: Não identificado
+2026-01-28 00:47:16,386 - INFO - Iniciando busca Google para: Real Madrid
+2026-01-28 00:47:21,282 - INFO - Resultado final para Real Madrid: Não identificado
+2026-01-28 00:47:21,345 - INFO - Iniciando busca Google para: Atlético-MG
+2026-01-28 00:47:26,252 - INFO - Resultado final para Atlético-MG: Não identificado
+2026-01-28 00:47:26,320 - INFO - Iniciando busca Google para: Man City
+2026-01-28 00:47:30,827 - INFO - Resultado final para Man City: Não identificado
+2026-01-28 00:47:30,891 - INFO - Iniciando busca Google para: Flamengo
+2026-01-28 00:47:32,885 - ERROR - Erro crítico ao buscar Flamengo: Page.goto: Target page, context or browser has been closed
+Call log:
+  - navigating to "https://www.google.com/search?q=t%C3%A9cnico%20do%20Flamengo", waiting until "load"
+
+2026-01-28 00:47:33,024 - INFO - Ciclo de atualização finalizado. 0 times processados.
+2026-01-28 00:47:33,024 - INFO - \u2705 Varredura programada concluída. Próxima em 4 horas.
+2026-01-28 00:47:34,235 - INFO - \U0001f552 INICIANDO VARREDURA PROGRAMADA AGENDADA (4h)...
+2026-01-28 00:47:34,238 - INFO - Iniciando ciclo de atualização para 11 times.
+2026-01-28 00:47:34,239 - INFO - Iniciando busca Google para: Internacional
+2026-01-28 00:47:39,678 - INFO - Resultado final para Internacional: Não identificado
+2026-01-28 00:47:39,798 - INFO - Iniciando busca Google para: Real Madrid
+2026-01-28 00:47:44,937 - INFO - Resultado final para Real Madrid: Não identificado
+2026-01-28 00:47:45,001 - INFO - Ciclo de atualização finalizado. 0 times processados.
+2026-01-28 00:47:45,001 - INFO - \u2705 Varredura programada concluída. Próxima em 4 horas.
+2026-01-28 00:48:56,002 - INFO - \U0001f552 INICIANDO VARREDURA PROGRAMADA AGENDADA (4h)...
+2026-01-28 00:48:56,006 - INFO - Iniciando ciclo de atualização para 11 times.
+2026-01-28 00:48:56,006 - INFO - Iniciando busca Google para: Internacional
+2026-01-28 00:49:01,019 - INFO - Resultado final para Internacional: Não identificado
+2026-01-28 00:49:01,088 - INFO - Iniciando busca Google para: Grêmio
+2026-01-28 00:49:06,023 - INFO - Resultado final para Grêmio: Não identificado
+2026-01-28 00:49:06,091 - INFO - Ciclo de atualização finalizado. 0 times processados.
+2026-01-28 00:49:06,091 - INFO - \u2705 Varredura programada concluída. Próxima em 4 horas.
+2026-01-28 00:49:42,830 - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Roaming\Python\Python314\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2026-01-28 00:49:43,063 - INFO - Iniciando ciclo de atualização para 11 times.
+2026-01-28 00:49:43,063 - INFO - Iniciando busca Google para: Corinthians
+2026-01-28 00:49:47,679 - INFO - Resultado final para Corinthians: Não identificado
+2026-01-28 00:49:47,814 - INFO - Iniciando busca Google para: Internacional
+2026-01-28 00:49:49,502 - ERROR - Erro crítico ao buscar Internacional: Page.goto: Target page, context or browser has been closed
+Call log:
+  - navigating to "https://www.google.com/search?q=t%C3%A9cnico%20do%20Internacional", waiting until "load"
+
+2026-01-28 00:49:49,680 - INFO - Iniciando busca Google para: Real Madrid
+2026-01-28 00:49:53,938 - INFO - Resultado final para Real Madrid: Não identificado
+2026-01-28 00:49:54,005 - INFO - Ciclo de atualização finalizado. 0 times processados.
+2026-01-28 00:49:55,370 - INFO - \U0001f552 INICIANDO VARREDURA PROGRAMADA AGENDADA (4h)...
+2026-01-28 00:49:55,374 - INFO - Iniciando ciclo de atualização para 11 times.
+2026-01-28 00:49:55,374 - INFO - Iniciando busca Google para: Corinthians
+2026-01-28 00:50:00,276 - INFO - Resultado final para Corinthians: Não identificado
+2026-01-28 00:50:00,354 - INFO - Ciclo de atualização finalizado. 0 times processados.
+2026-01-28 00:50:00,354 - INFO - \u2705 Varredura programada concluída. Próxima em 4 horas.
+2026-01-28 00:51:30,952 - INFO - \U0001f552 INICIANDO VARREDURA PROGRAMADA AGENDADA (4h)...
+2026-01-28 00:51:30,956 - INFO - Iniciando ciclo de atualização para 11 times.
+2026-01-28 00:51:30,956 - INFO - Iniciando busca Google para: Man City
+2026-01-28 00:51:35,443 - INFO - Resultado final para Man City: Não identificado
+2026-01-28 00:51:35,510 - INFO - Ciclo de atualização finalizado. 0 times processados.
+2026-01-28 00:51:35,510 - INFO - \u2705 Varredura programada concluída. Próxima em 4 horas.
+2026-01-28 00:54:36,804 - INFO - \U0001f552 INICIANDO VARREDURA PROGRAMADA AGENDADA (4h)...
+2026-01-28 00:54:36,808 - INFO - Iniciando ciclo de atualização para 11 times.
+2026-01-28 00:54:36,808 - INFO - Iniciando busca Google para: Corinthians
+2026-01-28 00:54:41,717 - INFO - Resultado final para Corinthians: Não identificado
+2026-01-28 00:54:41,844 - INFO - Iniciando busca Google para: Man City
+2026-01-28 00:54:47,353 - INFO - Resultado final para Man City: Não identificado
+2026-01-28 00:54:47,422 - INFO - Iniciando busca Google para: Barcelona
+2026-01-28 00:54:51,448 - INFO - Resultado final para Barcelona: Não identificado
+2026-01-28 00:54:51,516 - INFO - Ciclo de atualização finalizado. 0 times processados.
+2026-01-28 00:54:51,516 - INFO - \u2705 Varredura programada concluída. Próxima em 4 horas.
+2026-01-28 01:02:40,848 - INFO - \U0001f552 INICIANDO VARREDURA PROGRAMADA AGENDADA (4h)...
+2026-01-28 01:02:40,852 - INFO - Iniciando ciclo de atualização para 11 times.
+2026-01-28 01:02:40,852 - INFO - Ciclo de atualização finalizado. 0 times processados.
+2026-01-28 01:02:40,852 - INFO - \u2705 Varredura programada concluída. Próxima em 4 horas.
+2026-01-28 01:07:25,188 - INFO - \U0001f552 INICIANDO VARREDURA PROGRAMADA AGENDADA (4h)...
+2026-01-28 01:07:25,191 - INFO - Iniciando ciclo de atualização para 11 times.
+2026-01-28 01:07:25,192 - INFO - Iniciando busca Google para: Atlético-MG
+2026-01-28 01:07:32,731 - INFO - Resultado final para Atlético-MG: Não identificado
+2026-01-28 01:07:32,798 - INFO - Iniciando busca Google para: Man City
+2026-01-28 01:07:37,505 - INFO - Resultado final para Man City: Não identificado
+2026-01-28 01:07:37,572 - INFO - Iniciando busca Google para: Internacional
+2026-01-28 01:07:42,411 - INFO - Resultado final para Internacional: Não identificado
+2026-01-28 01:07:42,482 - INFO - Ciclo de atualização finalizado. 0 times processados.
+2026-01-28 01:07:47,009 - INFO - \u2705 Varredura programada concluída. Próxima em 4 horas.
+2026-01-28 01:17:03,939 - INFO - \U0001f552 INICIANDO VARREDURA PROGRAMADA AGENDADA (4h)...
+2026-01-28 01:17:03,962 - INFO - Iniciando ciclo de atualização para 11 times.
+2026-01-28 01:17:03,962 - INFO - Iniciando busca Google para: Palmeiras
+2026-01-28 01:17:17,470 - INFO - Resultado final para Palmeiras: Não identificado
+2026-01-28 01:17:17,547 - INFO - Iniciando busca Google para: São Paulo
+2026-01-28 01:17:22,740 - INFO - Resultado final para São Paulo: Não identificado
+2026-01-28 01:17:22,805 - INFO - Ciclo de atualização finalizado. 0 times processados.
+2026-01-28 01:17:22,805 - INFO - \u2705 Varredura programada concluída. Próxima em 4 horas.
+2026-01-28 01:25:24,075 - INFO - \U0001f552 INICIANDO VARREDURA PROGRAMADA AGENDADA (4h)...
+2026-01-28 01:25:24,078 - INFO - Iniciando ciclo de atualização para 11 times.
+2026-01-28 01:25:24,078 - INFO - Iniciando busca Google para: Internacional
+2026-01-28 01:25:27,610 - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Roaming\Python\Python314\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2026-01-28 01:25:27,864 - INFO - Iniciando ciclo de atualização para 11 times.
+2026-01-28 01:25:27,864 - INFO - Ciclo de atualização finalizado. 0 times processados.
+2026-01-28 01:25:32,227 - INFO - Resultado final para Internacional: Não identificado
+2026-01-28 01:25:32,320 - INFO - Iniciando busca Google para: Palmeiras
+2026-01-28 01:25:37,537 - INFO - Resultado final para Palmeiras: Não identificado
+2026-01-28 01:25:37,676 - INFO - Iniciando busca Google para: Cruzeiro
+2026-01-28 01:25:42,625 - INFO - Resultado final para Cruzeiro: Não identificado
+2026-01-28 01:25:42,693 - INFO - Iniciando busca Google para: Barcelona
+2026-01-28 01:25:47,391 - INFO - Resultado final para Barcelona: Não identificado
+2026-01-28 01:25:47,459 - INFO - Ciclo de atualização finalizado. 0 times processados.
+2026-01-28 01:25:47,459 - INFO - \u2705 Varredura programada concluída. Próxima em 4 horas.
+2026-01-28 01:26:15,620 - INFO - \U0001f552 INICIANDO VARREDURA PROGRAMADA AGENDADA (4h)...
+2026-01-28 01:26:15,624 - INFO - Iniciando ciclo de atualização para 11 times.
+2026-01-28 01:26:15,624 - INFO - Iniciando busca Google para: São Paulo
+2026-01-28 01:26:20,305 - INFO - Resultado final para São Paulo: Não identificado
+2026-01-28 01:26:20,370 - INFO - Ciclo de atualização finalizado. 0 times processados.
+2026-01-28 01:26:20,371 - INFO - \u2705 Varredura programada concluída. Próxima em 4 horas.
+2026-01-28 01:26:50,484 - INFO - \U0001f552 INICIANDO VARREDURA PROGRAMADA AGENDADA (4h)...
+2026-01-28 01:26:50,488 - INFO - Iniciando ciclo de atualização para 11 times.
+2026-01-28 01:26:50,488 - INFO - Iniciando busca Google para: Flamengo
+2026-01-28 01:26:55,543 - INFO - Resultado final para Flamengo: Não identificado
+2026-01-28 01:26:55,610 - INFO - Ciclo de atualização finalizado. 0 times processados.
+2026-01-28 01:26:55,610 - INFO - \u2705 Varredura programada concluída. Próxima em 4 horas.
+2026-01-28 01:28:11,433 - INFO - \U0001f552 INICIANDO VARREDURA PROGRAMADA AGENDADA (4h)...
+2026-01-28 01:28:11,436 - INFO - Iniciando ciclo de atualização para 11 times.
+2026-01-28 01:28:11,436 - INFO - Iniciando busca Google para: Cruzeiro
+2026-01-28 01:28:16,549 - INFO - Resultado final para Cruzeiro: Não identificado
+2026-01-28 01:28:16,619 - INFO - Ciclo de atualização finalizado. 0 times processados.
+2026-01-28 01:28:16,619 - INFO - \u2705 Varredura programada concluída. Próxima em 4 horas.
+2026-01-28 01:28:48,231 - INFO - \U0001f552 INICIANDO VARREDURA PROGRAMADA AGENDADA (4h)...
+2026-01-28 01:28:48,235 - INFO - Iniciando ciclo de atualização para 11 times.
+2026-01-28 01:28:48,235 - INFO - Iniciando busca Google para: Palmeiras
+2026-01-28 01:28:52,805 - INFO - Resultado final para Palmeiras: Não identificado
+2026-01-28 01:28:52,868 - INFO - Iniciando busca Google para: Man City
+2026-01-28 01:28:57,339 - INFO - Resultado final para Man City: Não identificado
+2026-01-28 01:28:57,401 - INFO - Iniciando busca Google para: Grêmio
+2026-01-28 01:29:02,110 - INFO - Resultado final para Grêmio: Não identificado
+2026-01-28 01:29:02,178 - INFO - Iniciando busca Google para: Internacional
+2026-01-28 01:29:06,398 - INFO - Resultado final para Internacional: Não identificado
+2026-01-28 01:29:06,461 - INFO - Ciclo de atualização finalizado. 0 times processados.
+2026-01-28 01:29:06,461 - INFO - \u2705 Varredura programada concluída. Próxima em 4 horas.
+2026-01-28 01:29:42,936 - INFO - \U0001f552 INICIANDO VARREDURA PROGRAMADA AGENDADA (4h)...
+2026-01-28 01:29:42,940 - INFO - Iniciando ciclo de atualização para 11 times.
+2026-01-28 01:29:42,940 - INFO - Iniciando busca Google para: Man City
+2026-01-28 01:29:47,051 - INFO - Resultado final para Man City: Não identificado
+2026-01-28 01:29:47,119 - INFO - Iniciando busca Google para: Real Madrid
+2026-01-28 01:29:51,089 - INFO - Resultado final para Real Madrid: Não identificado
+2026-01-28 01:29:51,157 - INFO - Ciclo de atualização finalizado. 0 times processados.
+2026-01-28 01:29:51,157 - INFO - \u2705 Varredura programada concluída. Próxima em 4 horas.
+2026-01-28 01:31:34,689 - INFO - \U0001f552 INICIANDO VARREDURA PROGRAMADA AGENDADA (4h)...
+2026-01-28 01:31:34,693 - INFO - Iniciando ciclo de atualização para 11 times.
+2026-01-28 01:31:34,693 - INFO - Iniciando busca Google para: São Paulo
+2026-01-28 01:31:39,620 - INFO - Resultado final para São Paulo: Não identificado
+2026-01-28 01:31:39,687 - INFO - Ciclo de atualização finalizado. 0 times processados.
+2026-01-28 01:31:39,687 - INFO - \u2705 Varredura programada concluída. Próxima em 4 horas.
+2026-01-28 01:33:09,110 - INFO - \U0001f552 INICIANDO VARREDURA PROGRAMADA AGENDADA (4h)...
+2026-01-28 01:33:09,115 - INFO - Iniciando ciclo de atualização para 11 times.
+2026-01-28 01:33:09,115 - INFO - Iniciando busca Google para: Cruzeiro
+2026-01-28 01:33:09,152 - INFO - \U0001f552 INICIANDO VARREDURA PROGRAMADA AGENDADA (4h)...
+2026-01-28 01:33:09,157 - INFO - Iniciando ciclo de atualização para 11 times.
+2026-01-28 01:33:09,157 - INFO - Iniciando busca Google para: Flamengo
+2026-01-28 01:33:13,594 - INFO - Resultado final para Cruzeiro: Não identificado
+2026-01-28 01:33:13,660 - INFO - Iniciando busca Google para: Flamengo
+2026-01-28 01:33:13,865 - INFO - Resultado final para Flamengo: Não identificado
+2026-01-28 01:33:13,933 - INFO - Iniciando busca Google para: Palmeiras
+2026-01-28 01:33:18,216 - INFO - Resultado final para Palmeiras: Não identificado
+2026-01-28 01:33:18,281 - INFO - Iniciando busca Google para: Atlético-MG
+2026-01-28 01:33:18,441 - INFO - Resultado final para Flamengo: Não identificado
+2026-01-28 01:33:18,514 - INFO - Ciclo de atualização finalizado. 0 times processados.
+2026-01-28 01:33:18,515 - INFO - \u2705 Varredura programada concluída. Próxima em 4 horas.
+2026-01-28 01:33:22,918 - INFO - Resultado final para Atlético-MG: Não identificado
+2026-01-28 01:33:22,986 - INFO - Ciclo de atualização finalizado. 0 times processados.
+2026-01-28 01:33:22,987 - INFO - \u2705 Varredura programada concluída. Próxima em 4 horas.
+2026-01-28 01:33:27,996 - INFO - \U0001f552 INICIANDO VARREDURA PROGRAMADA AGENDADA (4h)...
+2026-01-28 01:33:28,000 - INFO - Iniciando ciclo de atualização para 11 times.
+2026-01-28 01:33:28,000 - INFO - Iniciando ciclo de atualização para 11 times.
+2026-01-28 01:33:28,000 - INFO - Iniciando busca Google para: Palmeiras
+2026-01-28 01:33:28,000 - INFO - Iniciando busca Google para: Atlético-MG
+2026-01-28 01:33:32,797 - INFO - Resultado final para Atlético-MG: Não identificado
+2026-01-28 01:33:32,865 - INFO - Iniciando busca Google para: Cruzeiro
+2026-01-28 01:33:32,868 - INFO - Resultado final para Palmeiras: Não identificado
+2026-01-28 01:33:32,949 - INFO - Iniciando busca Google para: Cruzeiro
+2026-01-28 01:33:37,664 - INFO - Resultado final para Cruzeiro: Não identificado
+2026-01-28 01:33:37,722 - INFO - Resultado final para Cruzeiro: Não identificado
+2026-01-28 01:33:37,733 - INFO - Ciclo de atualização finalizado. 0 times processados.
+2026-01-28 01:33:37,733 - INFO - \u2705 Varredura programada concluída. Próxima em 4 horas.
+2026-01-28 01:33:37,790 - INFO - Ciclo de atualização finalizado. 0 times processados.
+2026-01-28 01:33:37,790 - INFO - \u2705 Varredura programada concluída. Próxima em 4 horas.
+2026-01-28 01:40:28,221 - INFO - \U0001f552 INICIANDO VARREDURA PROGRAMADA AGENDADA (4h)...
+2026-01-28 01:40:28,224 - INFO - Iniciando ciclo de atualização para 11 times.
+2026-01-28 01:40:28,224 - INFO - Iniciando busca Google para: Internacional
+2026-01-28 01:40:28,224 - INFO - Iniciando busca Google para: Atlético-MG
+2026-01-28 01:40:32,150 - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Roaming\Python\Python314\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2026-01-28 01:40:32,380 - INFO - Iniciando ciclo de atualização para 11 times.
+2026-01-28 01:40:32,381 - INFO - Iniciando busca Google para: Flamengo
+2026-01-28 01:40:33,166 - INFO - Resultado final para Internacional: Não identificado
+2026-01-28 01:40:33,247 - INFO - Iniciando busca Google para: Man City
+2026-01-28 01:40:33,879 - INFO - Resultado final para Atlético-MG: Não identificado
+2026-01-28 01:40:33,968 - INFO - Ciclo de atualização finalizado. 0 times processados.
+2026-01-28 01:40:33,968 - INFO - \u2705 Varredura programada concluída. Próxima em 4 horas.
+2026-01-28 01:40:38,097 - INFO - Resultado final para Flamengo: Não identificado
+2026-01-28 01:40:38,098 - INFO - Resultado final para Man City: Não identificado
+2026-01-28 01:40:38,219 - INFO - Iniciando busca Google para: Cruzeiro
+2026-01-28 01:40:38,224 - INFO - Ciclo de atualização finalizado. 0 times processados.
+2026-01-28 01:40:39,427 - INFO - \u2705 Varredura programada concluída. Próxima em 4 horas.
+2026-01-28 01:40:42,832 - INFO - Resultado final para Cruzeiro: Não identificado
+2026-01-28 01:40:42,902 - INFO - Iniciando busca Google para: Corinthians
+2026-01-28 01:40:46,870 - INFO - Resultado final para Corinthians: Não identificado
+2026-01-28 01:40:46,938 - INFO - Iniciando busca Google para: Barcelona
+2026-01-28 01:40:51,174 - INFO - Resultado final para Barcelona: Não identificado
+2026-01-28 01:40:51,240 - INFO - Iniciando busca Google para: Real Madrid
+2026-01-28 01:40:55,255 - INFO - Resultado final para Real Madrid: Não identificado
+2026-01-28 01:40:55,322 - INFO - Ciclo de atualização finalizado. 0 times processados.
+2026-01-28 01:44:39,654 - INFO - \U0001f552 INICIANDO VARREDURA PROGRAMADA AGENDADA (4h)...
+2026-01-28 01:44:39,658 - INFO - Iniciando ciclo de atualização para 11 times.
+2026-01-28 01:44:39,658 - INFO - Iniciando ciclo de atualização para 11 times.
+2026-01-28 01:44:39,658 - INFO - Iniciando busca Google para: Corinthians
+2026-01-28 01:44:43,741 - INFO - Resultado final para Corinthians: Não identificado
+2026-01-28 01:44:43,803 - INFO - Iniciando busca Google para: Palmeiras
+2026-01-28 01:44:43,927 - INFO - Resultado final para Flamengo: Não identificado
+2026-01-28 01:44:44,009 - INFO - Iniciando busca Google para: Grêmio
+2026-01-28 01:44:47,850 - INFO - Resultado final para Palmeiras: Não identificado
+2026-01-28 01:44:47,920 - INFO - Iniciando busca Google para: São Paulo
+2026-01-28 01:44:48,370 - INFO - Resultado final para Grêmio: Não identificado
+2026-01-28 01:44:48,461 - INFO - Iniciando busca Google para: Palmeiras
+2026-01-28 01:44:52,182 - INFO - Resultado final para São Paulo: Não identificado
+2026-01-28 01:44:52,277 - INFO - Ciclo de atualização finalizado. 0 times processados.
+2026-01-28 01:44:52,278 - INFO - \u2705 Varredura programada concluída. Próxima em 4 horas.
+2026-01-28 01:44:52,909 - INFO - Resultado final para Palmeiras: Não identificado
+2026-01-28 01:44:53,119 - INFO - Iniciando busca Google para: São Paulo
+2026-01-28 01:44:57,654 - INFO - Resultado final para São Paulo: Não identificado
+2026-01-28 01:44:57,725 - INFO - Ciclo de atualização finalizado. 0 times processados.
+2026-01-28 01:44:57,725 - INFO - \u2705 Varredura programada concluída. Próxima em 4 horas.
+2026-01-28 01:48:18,337 - INFO - \U0001f552 INICIANDO VARREDURA PROGRAMADA AGENDADA (4h)...
+2026-01-28 01:48:18,341 - INFO - Iniciando ciclo de atualização para 11 times.
+2026-01-28 01:48:18,341 - INFO - Iniciando busca Google para: Grêmio
+2026-01-28 01:48:18,499 - INFO - \U0001f552 INICIANDO VARREDURA PROGRAMADA AGENDADA (4h)...
+2026-01-28 01:48:18,504 - INFO - Iniciando ciclo de atualização para 11 times.
+2026-01-28 01:48:18,504 - INFO - Iniciando busca Google para: Atlético-MG
+2026-01-28 01:48:22,612 - INFO - Resultado final para Grêmio: Não identificado
+2026-01-28 01:48:22,682 - INFO - Iniciando busca Google para: Atlético-MG
+2026-01-28 01:48:22,891 - INFO - Resultado final para Atlético-MG: Não identificado
+2026-01-28 01:48:22,964 - INFO - Ciclo de atualização finalizado. 0 times processados.
+2026-01-28 01:48:22,964 - INFO - \u2705 Varredura programada concluída. Próxima em 4 horas.
+2026-01-28 01:48:26,848 - INFO - Resultado final para Atlético-MG: Não identificado
+2026-01-28 01:48:26,914 - INFO - Ciclo de atualização finalizado. 0 times processados.
+2026-01-28 01:48:26,915 - INFO - \u2705 Varredura programada concluída. Próxima em 4 horas.
+2026-01-28 01:48:59,098 - INFO - \U0001f552 INICIANDO VARREDURA PROGRAMADA AGENDADA (4h)...
+2026-01-28 01:48:59,102 - INFO - Iniciando ciclo de atualização para 11 times.
+2026-01-28 01:48:59,102 - INFO - Ciclo de atualização finalizado. 0 times processados.
+2026-01-28 01:48:59,102 - INFO - \u2705 Varredura programada concluída. Próxima em 4 horas.
+2026-01-28 01:48:59,112 - INFO - \U0001f552 INICIANDO VARREDURA PROGRAMADA AGENDADA (4h)...
+2026-01-28 01:48:59,116 - INFO - Iniciando ciclo de atualização para 11 times.
+2026-01-28 01:48:59,116 - INFO - Iniciando busca Google para: Flamengo
+2026-01-28 01:49:03,258 - INFO - Resultado final para Flamengo: Não identificado
+2026-01-28 01:49:03,325 - INFO - Ciclo de atualização finalizado. 0 times processados.
+2026-01-28 01:49:03,326 - INFO - \u2705 Varredura programada concluída. Próxima em 4 horas.
+2026-01-28 01:51:24,637 - INFO - \U0001f552 INICIANDO VARREDURA PROGRAMADA AGENDADA (4h)...
+2026-01-28 01:51:24,641 - INFO - Iniciando ciclo de atualização para 11 times.
+2026-01-28 01:51:24,641 - INFO - Iniciando ciclo de atualização para 11 times.
+2026-01-28 01:51:24,641 - INFO - Iniciando busca Google para: Corinthians
+2026-01-28 01:51:24,641 - INFO - Iniciando busca Google para: Corinthians
+2026-01-28 01:51:28,771 - INFO - Resultado final para Corinthians: Não identificado
+2026-01-28 01:51:28,851 - INFO - Iniciando busca Google para: São Paulo
+2026-01-28 01:51:29,286 - INFO - Texto bruto encontrado (.hgKElc): O atual treinador da equipe é Dorival Júnior, que assinou contrato em 28 de abril de 2025, com previsão de encerramento em dezembro de 2026, substituindo o argentino Ramón Díaz.
+2026-01-28 01:51:29,294 - INFO - Texto bruto encontrado (.hgKElc): O TÉCNICO DO CORINTHIANS EM 2025 SERÁ RAMÓN DÍAZ!
+2026-01-28 01:51:29,301 - INFO - Texto bruto encontrado (.hgKElc): Técnico segue pressionado no comando técnico e futuro será decidido nas oitavas de final da Copa do Brasil. Dorival Júnior continua sob forte pressão no Corinthians, mas seguirá no comando da equipe ao menos até o segundo clássico contra o Palmeiras, no jogo de volta das oitavas de final da Copa do Brasil.
+2026-01-28 01:51:29,310 - INFO - Texto bruto encontrado (.hgKElc): Treinadores do Corinthians desde a saída de Vagner Mancini em 2021: Sylvinho (2021-2022) Vitor Pereira (2022) Fernando Lázaro (2023)
+2026-01-28 01:51:29,341 - INFO - Texto bruto encontrado (.Z0LcW): Dorival Júnior
+2026-01-28 01:51:29,342 - INFO - Resultado final para Corinthians: Dorival Júnior
+2026-01-28 01:51:29,436 - INFO - ATUALIZAÇÃO: Corinthians mudou de 'Ramón Díaz' para 'Dorival Júnior'
+2026-01-28 01:51:29,438 - INFO - Dados salvos e atualizados com sucesso.
+2026-01-28 01:51:33,447 - INFO - Resultado final para São Paulo: Não identificado
+2026-01-28 01:51:33,516 - INFO - Ciclo de atualização finalizado. 0 times processados.
+2026-01-28 01:51:33,516 - INFO - \u2705 Varredura programada concluída. Próxima em 4 horas.
+2026-01-28 01:51:36,348 - INFO - Iniciando busca Google para: Real Madrid
+2026-01-28 01:51:40,392 - INFO - Resultado final para Real Madrid: Não identificado
+2026-01-28 01:51:40,501 - INFO - Ciclo de atualização finalizado. 1 times processados.
+2026-01-28 01:51:40,501 - INFO - \u2705 Varredura programada concluída. Próxima em 4 horas.
+2026-01-28 01:52:11,112 - INFO - \U0001f552 INICIANDO VARREDURA PROGRAMADA AGENDADA (4h)...
+2026-01-28 01:52:11,116 - INFO - Iniciando ciclo de atualização para 11 times.
+2026-01-28 01:52:11,116 - INFO - Iniciando busca Google para: Flamengo
+2026-01-28 01:52:11,235 - INFO - \U0001f552 INICIANDO VARREDURA PROGRAMADA AGENDADA (4h)...
+2026-01-28 01:52:11,239 - INFO - Iniciando ciclo de atualização para 11 times.
+2026-01-28 01:52:11,239 - INFO - Iniciando busca Google para: Internacional
+2026-01-28 01:52:15,222 - INFO - Resultado final para Flamengo: Não identificado
+2026-01-28 01:52:15,287 - INFO - Iniciando busca Google para: Barcelona
+2026-01-28 01:52:15,418 - INFO - Resultado final para Internacional: Não identificado
+2026-01-28 01:52:15,489 - INFO - Iniciando busca Google para: Atlético-MG
+2026-01-28 01:52:19,552 - INFO - Resultado final para Barcelona: Não identificado
+2026-01-28 01:52:19,613 - INFO - Ciclo de atualização finalizado. 0 times processados.
+2026-01-28 01:52:19,613 - INFO - \u2705 Varredura programada concluída. Próxima em 4 horas.
+2026-01-28 01:52:19,784 - INFO - Resultado final para Atlético-MG: Não identificado
+2026-01-28 01:52:19,873 - INFO - Iniciando busca Google para: Grêmio
+2026-01-28 01:52:24,038 - INFO - Resultado final para Grêmio: Não identificado
+2026-01-28 01:52:24,107 - INFO - Ciclo de atualização finalizado. 0 times processados.
+2026-01-28 01:52:24,108 - INFO - \u2705 Varredura programada concluída. Próxima em 4 horas.
+2026-01-28 11:50:19,286 - INFO - \U0001f552 INICIANDO VARREDURA PROGRAMADA AGENDADA (4h)...
+2026-01-28 11:50:19,291 - INFO - Iniciando ciclo de atualização para 11 times.
+2026-01-28 11:50:19,291 - INFO - Iniciando busca Google para: Corinthians
+2026-01-28 11:50:27,011 - INFO - Resultado final para Corinthians: Não identificado
+2026-01-28 11:50:27,146 - INFO - Iniciando busca Google para: Flamengo
+2026-01-28 11:50:31,222 - INFO - Resultado final para Flamengo: Não identificado
+2026-01-28 11:50:31,287 - INFO - Iniciando busca Google para: Man City
+2026-01-28 11:50:35,388 - INFO - Resultado final para Man City: Não identificado
+2026-01-28 11:50:35,477 - INFO - Ciclo de atualização finalizado. 0 times processados.
+2026-01-28 11:50:35,478 - INFO - \u2705 Varredura programada concluída. Próxima em 4 horas.
+2026-01-28 11:59:09,094 - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Roaming\Python\Python314\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2026-01-28 11:59:09,321 - INFO - Iniciando ciclo de atualização para 11 times.
+2026-01-28 11:59:09,322 - INFO - Iniciando busca Google para: Cruzeiro
+2026-01-28 11:59:16,938 - INFO - Resultado final para Cruzeiro: Não identificado
+2026-01-28 11:59:17,034 - INFO - Iniciando busca Google para: Grêmio
+2026-01-28 11:59:21,049 - INFO - Resultado final para Grêmio: Não identificado
+2026-01-28 11:59:21,114 - INFO - Ciclo de atualização finalizado. 0 times processados.
+2026-01-28 11:59:46,432 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-55' coro=<Connection.run() done, defined at C:\Users\User\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_connection.py:305> exception=NotImplementedError()>
+Traceback (most recent call last):
+  File "C:\Python314\Lib\asyncio\tasks.py", line 289, in __step_run_and_handle_result
+    result = coro.send(None)
+  File "C:\Users\User\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_connection.py", line 312, in run
+    await self._transport.connect()
+  File "C:\Users\User\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_transport.py", line 133, in connect
+    raise exc
+  File "C:\Users\User\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "C:\Python314\Lib\asyncio\subprocess.py", line 224, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        stderr=stderr, **kwds)
+        ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\asyncio\base_events.py", line 1798, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        protocol, popen_args, False, stdin, stdout, stderr,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        bufsize, **kwargs)
+        ^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\asyncio\base_events.py", line 533, in _make_subprocess_transport
+    raise NotImplementedError
+NotImplementedError
+2026-01-28 12:03:49,319 - INFO - \U0001f552 INICIANDO VARREDURA PROGRAMADA AGENDADA (4h)...
+2026-01-28 12:03:49,322 - INFO - Iniciando ciclo de atualização para 11 times.
+2026-01-28 12:03:49,323 - INFO - Iniciando busca Google para: Atlético-MG
+2026-01-28 12:03:53,641 - INFO - Resultado final para Atlético-MG: Não identificado
+2026-01-28 12:03:53,712 - INFO - Iniciando busca Google para: Real Madrid
+2026-01-28 12:03:57,834 - INFO - Resultado final para Real Madrid: Não identificado
+2026-01-28 12:03:57,898 - INFO - Iniciando busca Google para: Grêmio
+2026-01-28 12:03:59,858 - ERROR - Erro crítico ao buscar Grêmio: Page.goto: Target page, context or browser has been closed
+Call log:
+  - navigating to "https://www.google.com/search?q=t%C3%A9cnico%20do%20Gr%C3%AAmio", waiting until "load"
+
+2026-01-28 12:04:00,029 - INFO - Ciclo de atualização finalizado. 0 times processados.
+2026-01-28 12:04:01,437 - INFO - \U0001f552 INICIANDO VARREDURA PROGRAMADA AGENDADA (4h)...
+2026-01-28 12:04:01,441 - INFO - Iniciando ciclo de atualização para 11 times.
+2026-01-28 12:04:01,441 - INFO - Iniciando busca Google para: Real Madrid
+2026-01-28 12:04:05,715 - INFO - Resultado final para Real Madrid: Não identificado
+2026-01-28 12:04:05,778 - INFO - Iniciando busca Google para: Man City
+2026-01-28 12:04:09,810 - INFO - Resultado final para Man City: Não identificado
+2026-01-28 12:04:09,881 - INFO - Ciclo de atualização finalizado. 0 times processados.
+2026-01-28 12:04:09,881 - INFO - \u2705 Varredura programada concluída. Próxima em 4 horas.
+2026-01-28 12:04:10,632 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-1' coro=<Connection.run() done, defined at C:\Users\User\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_connection.py:305> exception=NotImplementedError()>
+Traceback (most recent call last):
+  File "C:\Python314\Lib\asyncio\tasks.py", line 289, in __step_run_and_handle_result
+    result = coro.send(None)
+  File "C:\Users\User\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_connection.py", line 312, in run
+    await self._transport.connect()
+  File "C:\Users\User\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_transport.py", line 133, in connect
+    raise exc
+  File "C:\Users\User\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "C:\Python314\Lib\asyncio\subprocess.py", line 224, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        stderr=stderr, **kwds)
+        ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\asyncio\base_events.py", line 1798, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        protocol, popen_args, False, stdin, stdout, stderr,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        bufsize, **kwargs)
+        ^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\asyncio\base_events.py", line 533, in _make_subprocess_transport
+    raise NotImplementedError
+NotImplementedError
+2026-01-28 12:04:17,913 - INFO - \U0001f552 INICIANDO VARREDURA PROGRAMADA AGENDADA (4h)...
+2026-01-28 12:04:17,916 - INFO - Iniciando ciclo de atualização para 11 times.
+2026-01-28 12:04:17,917 - INFO - Iniciando busca Google para: Palmeiras
+2026-01-28 12:04:21,994 - INFO - Resultado final para Palmeiras: Não identificado
+2026-01-28 12:04:22,065 - INFO - Ciclo de atualização finalizado. 0 times processados.
+2026-01-28 12:04:22,066 - INFO - \u2705 Varredura programada concluída. Próxima em 4 horas.
+2026-01-28 12:06:13,619 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-1' coro=<Connection.run() done, defined at C:\Users\User\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_connection.py:305> exception=NotImplementedError()>
+Traceback (most recent call last):
+  File "C:\Python314\Lib\asyncio\tasks.py", line 289, in __step_run_and_handle_result
+    result = coro.send(None)
+  File "C:\Users\User\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_connection.py", line 312, in run
+    await self._transport.connect()
+  File "C:\Users\User\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_transport.py", line 133, in connect
+    raise exc
+  File "C:\Users\User\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "C:\Python314\Lib\asyncio\subprocess.py", line 224, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        stderr=stderr, **kwds)
+        ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\asyncio\base_events.py", line 1798, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        protocol, popen_args, False, stdin, stdout, stderr,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        bufsize, **kwargs)
+        ^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\asyncio\base_events.py", line 533, in _make_subprocess_transport
+    raise NotImplementedError
+NotImplementedError
+2026-01-28 12:07:47,513 - INFO - \U0001f552 INICIANDO VARREDURA PROGRAMADA AGENDADA (4h)...
+2026-01-28 12:07:47,517 - INFO - Iniciando ciclo de atualização para 11 times.
+2026-01-28 12:07:47,517 - INFO - Iniciando busca Google para: Grêmio
+2026-01-28 12:07:51,858 - INFO - Resultado final para Grêmio: Não identificado
+2026-01-28 12:07:51,928 - INFO - Iniciando busca Google para: Palmeiras
+2026-01-28 12:07:52,622 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-1' coro=<Connection.run() done, defined at C:\Users\User\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_connection.py:305> exception=NotImplementedError()>
+Traceback (most recent call last):
+  File "C:\Python314\Lib\asyncio\tasks.py", line 289, in __step_run_and_handle_result
+    result = coro.send(None)
+  File "C:\Users\User\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_connection.py", line 312, in run
+    await self._transport.connect()
+  File "C:\Users\User\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_transport.py", line 133, in connect
+    raise exc
+  File "C:\Users\User\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "C:\Python314\Lib\asyncio\subprocess.py", line 224, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        stderr=stderr, **kwds)
+        ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\asyncio\base_events.py", line 1798, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        protocol, popen_args, False, stdin, stdout, stderr,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        bufsize, **kwargs)
+        ^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\asyncio\base_events.py", line 533, in _make_subprocess_transport
+    raise NotImplementedError
+NotImplementedError
+2026-01-28 12:07:55,952 - INFO - Resultado final para Palmeiras: Não identificado
+2026-01-28 12:07:56,016 - INFO - Iniciando busca Google para: Barcelona
+2026-01-28 12:08:00,037 - INFO - Resultado final para Barcelona: Não identificado
+2026-01-28 12:08:00,101 - INFO - Ciclo de atualização finalizado. 0 times processados.
+2026-01-28 12:08:00,102 - INFO - \u2705 Varredura programada concluída. Próxima em 4 horas.
+2026-01-28 12:08:54,670 - INFO - \U0001f552 INICIANDO VARREDURA PROGRAMADA AGENDADA (4h)...
+2026-01-28 12:08:54,674 - INFO - Iniciando ciclo de atualização para 11 times.
+2026-01-28 12:08:54,674 - INFO - Iniciando busca Google para: Barcelona
+2026-01-28 12:08:58,689 - INFO - Resultado final para Barcelona: Não identificado
+2026-01-28 12:08:58,749 - INFO - Iniciando busca Google para: Internacional
+2026-01-28 12:09:02,839 - INFO - Resultado final para Internacional: Não identificado
+2026-01-28 12:09:02,900 - INFO - Ciclo de atualização finalizado. 0 times processados.
+2026-01-28 12:09:02,901 - INFO - \u2705 Varredura programada concluída. Próxima em 4 horas.
+2026-01-28 12:09:35,290 - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Roaming\Python\Python314\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2026-01-28 12:09:35,522 - INFO - Iniciando ciclo de atualização para 11 times.
+2026-01-28 12:09:35,522 - INFO - Ciclo de atualização finalizado. 0 times processados.
+2026-01-28 12:09:36,144 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-1' coro=<Connection.run() done, defined at C:\Users\User\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_connection.py:305> exception=NotImplementedError()>
+Traceback (most recent call last):
+  File "C:\Python314\Lib\asyncio\tasks.py", line 289, in __step_run_and_handle_result
+    result = coro.send(None)
+  File "C:\Users\User\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_connection.py", line 312, in run
+    await self._transport.connect()
+  File "C:\Users\User\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_transport.py", line 133, in connect
+    raise exc
+  File "C:\Users\User\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "C:\Python314\Lib\asyncio\subprocess.py", line 224, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        stderr=stderr, **kwds)
+        ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\asyncio\base_events.py", line 1798, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        protocol, popen_args, False, stdin, stdout, stderr,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        bufsize, **kwargs)
+        ^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\asyncio\base_events.py", line 533, in _make_subprocess_transport
+    raise NotImplementedError
+NotImplementedError
+2026-01-28 12:09:37,661 - INFO - \U0001f552 INICIANDO VARREDURA PROGRAMADA AGENDADA (4h)...
+2026-01-28 12:09:37,664 - INFO - Iniciando ciclo de atualização para 11 times.
+2026-01-28 12:09:37,664 - INFO - Iniciando busca Google para: Real Madrid
+2026-01-28 12:09:41,760 - INFO - Resultado final para Real Madrid: Não identificado
+2026-01-28 12:09:41,828 - INFO - Iniciando busca Google para: Cruzeiro
+2026-01-28 12:09:45,830 - INFO - Resultado final para Cruzeiro: Não identificado
+2026-01-28 12:09:45,901 - INFO - Iniciando busca Google para: Man City
+2026-01-28 12:09:48,478 - ERROR - Erro crítico ao buscar Man City: Page.wait_for_timeout: Target page, context or browser has been closed
+2026-01-28 12:09:48,630 - INFO - Iniciando busca Google para: Internacional
+2026-01-28 12:09:52,797 - INFO - Resultado final para Internacional: Não identificado
+2026-01-28 12:09:52,872 - INFO - Ciclo de atualização finalizado. 0 times processados.
+2026-01-28 12:09:54,308 - INFO - \U0001f552 INICIANDO VARREDURA PROGRAMADA AGENDADA (4h)...
+2026-01-28 12:09:54,311 - INFO - Iniciando ciclo de atualização para 11 times.
+2026-01-28 12:09:54,311 - INFO - Iniciando busca Google para: São Paulo
+2026-01-28 12:09:54,318 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-10' coro=<Connection.run() done, defined at C:\Users\User\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_connection.py:305> exception=NotImplementedError()>
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_connection.py", line 312, in run
+    await self._transport.connect()
+  File "C:\Users\User\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_transport.py", line 133, in connect
+    raise exc
+  File "C:\Users\User\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "C:\Python314\Lib\asyncio\subprocess.py", line 224, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        stderr=stderr, **kwds)
+        ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\asyncio\base_events.py", line 1798, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        protocol, popen_args, False, stdin, stdout, stderr,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        bufsize, **kwargs)
+        ^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\asyncio\base_events.py", line 533, in _make_subprocess_transport
+    raise NotImplementedError
+NotImplementedError
+2026-01-28 12:09:54,339 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-14' coro=<Connection.run() done, defined at C:\Users\User\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_connection.py:305> exception=NotImplementedError()>
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_connection.py", line 312, in run
+    await self._transport.connect()
+  File "C:\Users\User\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_transport.py", line 133, in connect
+    raise exc
+  File "C:\Users\User\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "C:\Python314\Lib\asyncio\subprocess.py", line 224, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        stderr=stderr, **kwds)
+        ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\asyncio\base_events.py", line 1798, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        protocol, popen_args, False, stdin, stdout, stderr,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        bufsize, **kwargs)
+        ^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\asyncio\base_events.py", line 533, in _make_subprocess_transport
+    raise NotImplementedError
+NotImplementedError
+2026-01-28 12:09:58,228 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-20' coro=<Connection.run() done, defined at C:\Users\User\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_connection.py:305> exception=NotImplementedError()>
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_connection.py", line 312, in run
+    await self._transport.connect()
+  File "C:\Users\User\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_transport.py", line 133, in connect
+    raise exc
+  File "C:\Users\User\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "C:\Python314\Lib\asyncio\subprocess.py", line 224, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        stderr=stderr, **kwds)
+        ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\asyncio\base_events.py", line 1798, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        protocol, popen_args, False, stdin, stdout, stderr,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        bufsize, **kwargs)
+        ^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\asyncio\base_events.py", line 533, in _make_subprocess_transport
+    raise NotImplementedError
+NotImplementedError
+2026-01-28 12:09:58,476 - INFO - Resultado final para São Paulo: Não identificado
+2026-01-28 12:09:58,560 - INFO - Iniciando busca Google para: Cruzeiro
+2026-01-28 12:10:02,880 - INFO - Resultado final para Cruzeiro: Não identificado
+2026-01-28 12:10:02,946 - INFO - Iniciando busca Google para: Real Madrid
+2026-01-28 12:10:06,165 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-67' coro=<Connection.run() done, defined at C:\Users\User\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_connection.py:305> exception=NotImplementedError()>
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_connection.py", line 312, in run
+    await self._transport.connect()
+  File "C:\Users\User\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_transport.py", line 133, in connect
+    raise exc
+  File "C:\Users\User\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "C:\Python314\Lib\asyncio\subprocess.py", line 224, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        stderr=stderr, **kwds)
+        ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\asyncio\base_events.py", line 1798, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        protocol, popen_args, False, stdin, stdout, stderr,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        bufsize, **kwargs)
+        ^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\asyncio\base_events.py", line 533, in _make_subprocess_transport
+    raise NotImplementedError
+NotImplementedError
+2026-01-28 12:10:06,901 - INFO - Resultado final para Real Madrid: Não identificado
+2026-01-28 12:10:06,972 - INFO - Iniciando busca Google para: Grêmio
+2026-01-28 12:10:10,914 - INFO - Resultado final para Grêmio: Não identificado
+2026-01-28 12:10:10,976 - INFO - Iniciando busca Google para: Corinthians
+2026-01-28 12:10:14,914 - INFO - Resultado final para Corinthians: Não identificado
+2026-01-28 12:10:14,979 - INFO - Ciclo de atualização finalizado. 0 times processados.
+2026-01-28 12:10:14,979 - INFO - \u2705 Varredura programada concluída. Próxima em 4 horas.
+2026-01-28 12:10:36,605 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-129' coro=<Connection.run() done, defined at C:\Users\User\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_connection.py:305> exception=NotImplementedError()>
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_connection.py", line 312, in run
+    await self._transport.connect()
+  File "C:\Users\User\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_transport.py", line 133, in connect
+    raise exc
+  File "C:\Users\User\AppData\Roaming\Python\Python314\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "C:\Python314\Lib\asyncio\subprocess.py", line 224, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        stderr=stderr, **kwds)
+        ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\asyncio\base_events.py", line 1798, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        protocol, popen_args, False, stdin, stdout, stderr,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        bufsize, **kwargs)
+        ^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\asyncio\base_events.py", line 533, in _make_subprocess_transport
+    raise NotImplementedError
+NotImplementedError

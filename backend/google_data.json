@@ -1,0 +1,1480 @@
+{
+    "Flamengo": {
+        "lineup": {
+            "players": [
+                "Rossi",
+                "Varela",
+                "Léo Ortiz",
+                "Léo Pereira",
+                "Alex Sandro",
+                "Pulgar",
+                "Gerson",
+                "Arrascaeta",
+                "Luiz Araújo",
+                "Michael",
+                "Pedro"
+            ],
+            "coach": "Filipe Luís",
+            "status": "Carioca"
+        },
+        "history": [
+            {
+                "opponent": "Fluminense",
+                "score": "1 - 2",
+                "result": "D",
+                "date": "25/01",
+                "winner": "Fluminense",
+                "is_home": false,
+                "competition": "Carioca"
+            },
+            {
+                "opponent": "Vasco da Gama",
+                "score": "1 - 0",
+                "result": "V",
+                "date": "21/01",
+                "winner": "Flamengo",
+                "is_home": true,
+                "competition": "Carioca"
+            },
+            {
+                "opponent": "Volta Redonda",
+                "score": "0 - 3",
+                "result": "D",
+                "date": "17/01",
+                "winner": "Volta Redonda",
+                "is_home": false,
+                "competition": "Carioca"
+            },
+            {
+                "opponent": "Bangu",
+                "score": "1 - 2",
+                "result": "D",
+                "date": "14/01",
+                "winner": "Bangu",
+                "is_home": false,
+                "competition": "Carioca"
+            },
+            {
+                "opponent": "Portuguesa-RJ",
+                "score": "1 - 1",
+                "result": "E",
+                "date": "11/01",
+                "winner": "Empate",
+                "is_home": true,
+                "competition": "Carioca"
+            }
+        ],
+        "next": [
+            {
+                "opponent": "São Paulo",
+                "date": "28/01 - 21:30",
+                "is_home": false,
+                "competition": "Brasileirão Betano",
+                "venue": "MorumBIS",
+                "odds": {
+                    "1x2": {
+                        "Betano": {
+                            "home": 3.95,
+                            "draw": 3.35,
+                            "away": 1.87
+                        },
+                        "Sportingbet": {
+                            "home": 3.9,
+                            "draw": 3.4,
+                            "away": 1.9
+                        },
+                        "KTO": {
+                            "home": 3.85,
+                            "draw": 3.38,
+                            "away": 1.92
+                        },
+                        "Superbet": {
+                            "home": 3.88,
+                            "draw": 3.36,
+                            "away": 1.89
+                        }
+                    },
+                    "over_under": {
+                        "Betano": {
+                            "over_05": 1.08,
+                            "over_15": 1.35,
+                            "over_25": 1.85
+                        },
+                        "Sportingbet": {
+                            "over_05": 1.07,
+                            "over_15": 1.38,
+                            "over_25": 1.88
+                        },
+                        "KTO": {
+                            "over_05": 1.09,
+                            "over_15": 1.33,
+                            "over_25": 1.82
+                        },
+                        "Superbet": {
+                            "over_05": 1.08,
+                            "over_15": 1.36,
+                            "over_25": 1.86
+                        }
+                    },
+                    "btts": {
+                        "Betano": {
+                            "yes": 1.75,
+                            "no": 2.05
+                        },
+                        "Sportingbet": {
+                            "yes": 1.78,
+                            "no": 2.02
+                        },
+                        "KTO": {
+                            "yes": 1.72,
+                            "no": 2.08
+                        },
+                        "Superbet": {
+                            "yes": 1.76,
+                            "no": 2.04
+                        }
+                    }
+                },
+                "source": "Google/Oddspedia/SportyTrader"
+            }
+        ]
+    },
+    "São Paulo": {
+        "lineup": {
+            "players": [
+                "Rafael",
+                "Igor Vinícius",
+                "Arboleda",
+                "Alan Franco",
+                "Welington",
+                "Luiz Gustavo",
+                "Bobadilla",
+                "Lucas",
+                "Luciano",
+                "Ferreirinha",
+                "Calleri"
+            ],
+            "coach": "Hernán Crespo",
+            "status": "Paulistão"
+        },
+        "history": [
+            {
+                "opponent": "Palmeiras",
+                "score": "1 - 2",
+                "result": "D",
+                "date": "24/01",
+                "winner": "Palmeiras",
+                "is_home": false,
+                "competition": "Paulistão"
+            },
+            {
+                "opponent": "Corinthians",
+                "score": "1 - 1",
+                "result": "E",
+                "date": "18/01",
+                "winner": "Empate",
+                "is_home": true,
+                "competition": "Paulistão"
+            },
+            {
+                "opponent": "Santos",
+                "score": "1 - 2",
+                "result": "D",
+                "date": "10/01",
+                "winner": "Santos",
+                "is_home": false,
+                "competition": "Paulistão"
+            },
+            {
+                "opponent": "Botafogo-SP",
+                "score": "2 - 0",
+                "result": "V",
+                "date": "07/01",
+                "winner": "São Paulo",
+                "is_home": true,
+                "competition": "Paulistão"
+            }
+        ],
+        "next": [
+            {
+                "opponent": "Flamengo",
+                "date": "28/01 - 21:30",
+                "is_home": true,
+                "competition": "Brasileirão Betano",
+                "venue": "MorumBIS",
+                "odds": {
+                    "1x2": {
+                        "Betano": {
+                            "home": 3.95,
+                            "draw": 3.35,
+                            "away": 1.87
+                        },
+                        "Sportingbet": {
+                            "home": 3.9,
+                            "draw": 3.4,
+                            "away": 1.9
+                        },
+                        "KTO": {
+                            "home": 3.85,
+                            "draw": 3.38,
+                            "away": 1.92
+                        },
+                        "Superbet": {
+                            "home": 3.88,
+                            "draw": 3.36,
+                            "away": 1.89
+                        }
+                    },
+                    "over_under": {
+                        "Betano": {
+                            "over_05": 1.08,
+                            "over_15": 1.35,
+                            "over_25": 1.85
+                        },
+                        "Sportingbet": {
+                            "over_05": 1.07,
+                            "over_15": 1.38,
+                            "over_25": 1.88
+                        },
+                        "KTO": {
+                            "over_05": 1.09,
+                            "over_15": 1.33,
+                            "over_25": 1.82
+                        },
+                        "Superbet": {
+                            "over_05": 1.08,
+                            "over_15": 1.36,
+                            "over_25": 1.86
+                        }
+                    },
+                    "btts": {
+                        "Betano": {
+                            "yes": 1.75,
+                            "no": 2.05
+                        },
+                        "Sportingbet": {
+                            "yes": 1.78,
+                            "no": 2.02
+                        },
+                        "KTO": {
+                            "yes": 1.72,
+                            "no": 2.08
+                        },
+                        "Superbet": {
+                            "yes": 1.76,
+                            "no": 2.04
+                        }
+                    }
+                },
+                "source": "Google/Oddspedia/SportyTrader"
+            }
+        ]
+    },
+    "Palmeiras": {
+        "lineup": {
+            "players": [
+                "Carlos Miguel",
+                "Khellven",
+                "G. Gómez",
+                "Bruno Fuchs",
+                "Piquerez",
+                "Marlon Freitas",
+                "A. Pereira",
+                "Allan",
+                "Mauricio",
+                "Sosa",
+                "Flaco López"
+            ],
+            "coach": "Abel Ferreira",
+            "status": "Paulistão"
+        },
+        "history": [
+            {
+                "opponent": "São Paulo",
+                "score": "2 - 1",
+                "result": "V",
+                "date": "24/01",
+                "winner": "Palmeiras",
+                "is_home": true,
+                "competition": "Paulistão"
+            },
+            {
+                "opponent": "Novorizontino",
+                "score": "0 - 4",
+                "result": "D",
+                "date": "20/01",
+                "winner": "Novorizontino",
+                "is_home": false,
+                "competition": "Paulistão"
+            },
+            {
+                "opponent": "Mirassol",
+                "score": "1 - 0",
+                "result": "V",
+                "date": "17/01",
+                "winner": "Palmeiras",
+                "is_home": true,
+                "competition": "Paulistão"
+            },
+            {
+                "opponent": "Santos",
+                "score": "1 - 0",
+                "result": "V",
+                "date": "14/01",
+                "winner": "Palmeiras",
+                "is_home": true,
+                "competition": "Paulistão"
+            },
+            {
+                "opponent": "Portuguesa",
+                "score": "1 - 0",
+                "result": "V",
+                "date": "10/01",
+                "winner": "Palmeiras",
+                "is_home": false,
+                "competition": "Paulistão"
+            }
+        ],
+        "next": [
+            {
+                "opponent": "Atlético-MG",
+                "date": "28/01 - 21:30",
+                "is_home": false,
+                "competition": "Brasileirão Betano",
+                "venue": "Arena MRV",
+                "odds": {
+                    "1x2": {
+                        "Betano": {
+                            "home": 3.15,
+                            "draw": 3.15,
+                            "away": 2.42
+                        },
+                        "Sportingbet": {
+                            "home": 3.1,
+                            "draw": 3.2,
+                            "away": 2.45
+                        },
+                        "KTO": {
+                            "home": 3.18,
+                            "draw": 3.12,
+                            "away": 2.4
+                        },
+                        "Superbet": {
+                            "home": 3.12,
+                            "draw": 3.18,
+                            "away": 2.44
+                        }
+                    },
+                    "over_under": {
+                        "Betano": {
+                            "over_05": 1.05,
+                            "over_15": 1.28,
+                            "over_25": 1.72
+                        },
+                        "Sportingbet": {
+                            "over_05": 1.06,
+                            "over_15": 1.3,
+                            "over_25": 1.75
+                        },
+                        "KTO": {
+                            "over_05": 1.04,
+                            "over_15": 1.26,
+                            "over_25": 1.7
+                        },
+                        "Superbet": {
+                            "over_05": 1.05,
+                            "over_15": 1.29,
+                            "over_25": 1.73
+                        }
+                    },
+                    "btts": {
+                        "Betano": {
+                            "yes": 1.9,
+                            "no": 1.85
+                        },
+                        "Sportingbet": {
+                            "yes": 1.92,
+                            "no": 1.83
+                        },
+                        "KTO": {
+                            "yes": 1.88,
+                            "no": 1.87
+                        },
+                        "Superbet": {
+                            "yes": 1.91,
+                            "no": 1.84
+                        }
+                    }
+                },
+                "source": "Google/Betano/SportyTrader"
+            }
+        ]
+    },
+    "Atlético-MG": {
+        "lineup": {
+            "players": [
+                "Everson",
+                "Preciado",
+                "Ruan",
+                "Junior Alonso",
+                "Renan Lodi",
+                "Alan Franco",
+                "Maycon",
+                "Victor Hugo",
+                "Bernard",
+                "Dudu",
+                "Hulk"
+            ],
+            "coach": "Gabriel Milito",
+            "status": "Mineiro"
+        },
+        "history": [
+            {
+                "opponent": "Cruzeiro",
+                "score": "2 - 1",
+                "result": "V",
+                "date": "25/01",
+                "winner": "Atlético-MG",
+                "is_home": true,
+                "competition": "Mineiro"
+            },
+            {
+                "opponent": "América-MG",
+                "score": "1 - 1",
+                "result": "E",
+                "date": "22/01",
+                "winner": "Empate",
+                "is_home": false,
+                "competition": "Mineiro"
+            },
+            {
+                "opponent": "Tombense",
+                "score": "1 - 1",
+                "result": "E",
+                "date": "18/01",
+                "winner": "Empate",
+                "is_home": true,
+                "competition": "Mineiro"
+            },
+            {
+                "opponent": "North EC",
+                "score": "1 - 1",
+                "result": "E",
+                "date": "14/01",
+                "winner": "Empate",
+                "is_home": false,
+                "competition": "Mineiro"
+            },
+            {
+                "opponent": "Betim",
+                "score": "1 - 1",
+                "result": "E",
+                "date": "11/01",
+                "winner": "Empate",
+                "is_home": false,
+                "competition": "Mineiro"
+            }
+        ],
+        "next": [
+            {
+                "opponent": "Palmeiras",
+                "date": "28/01 - 21:30",
+                "is_home": true,
+                "competition": "Brasileirão Betano",
+                "venue": "Arena MRV",
+                "odds": {
+                    "1x2": {
+                        "Betano": {
+                            "home": 3.15,
+                            "draw": 3.15,
+                            "away": 2.42
+                        },
+                        "Sportingbet": {
+                            "home": 3.1,
+                            "draw": 3.2,
+                            "away": 2.45
+                        },
+                        "KTO": {
+                            "home": 3.18,
+                            "draw": 3.12,
+                            "away": 2.4
+                        },
+                        "Superbet": {
+                            "home": 3.12,
+                            "draw": 3.18,
+                            "away": 2.44
+                        }
+                    },
+                    "over_under": {
+                        "Betano": {
+                            "over_05": 1.05,
+                            "over_15": 1.28,
+                            "over_25": 1.72
+                        },
+                        "Sportingbet": {
+                            "over_05": 1.06,
+                            "over_15": 1.3,
+                            "over_25": 1.75
+                        },
+                        "KTO": {
+                            "over_05": 1.04,
+                            "over_15": 1.26,
+                            "over_25": 1.7
+                        },
+                        "Superbet": {
+                            "over_05": 1.05,
+                            "over_15": 1.29,
+                            "over_25": 1.73
+                        }
+                    },
+                    "btts": {
+                        "Betano": {
+                            "yes": 1.9,
+                            "no": 1.85
+                        },
+                        "Sportingbet": {
+                            "yes": 1.92,
+                            "no": 1.83
+                        },
+                        "KTO": {
+                            "yes": 1.88,
+                            "no": 1.87
+                        },
+                        "Superbet": {
+                            "yes": 1.91,
+                            "no": 1.84
+                        }
+                    }
+                },
+                "source": "Google/Betano/SportyTrader"
+            }
+        ]
+    },
+    "Corinthians": {
+        "lineup": {
+            "players": [
+                "Hugo Souza",
+                "Matheuzinho",
+                "André Ramalho",
+                "G. Henrique",
+                "Matheus Bidu",
+                "Charles",
+                "André Luiz",
+                "Carrillo",
+                "Breno Bidon",
+                "Vitinho",
+                "Gui Negão"
+            ],
+            "coach": "Dorival Júnior",
+            "status": "Paulistão",
+            "last_checked": "2026-01-28 01:51:29"
+        },
+        "history": [
+            {
+                "opponent": "Velo Clube",
+                "score": "1 - 0",
+                "result": "V",
+                "date": "25/01",
+                "winner": "Corinthians",
+                "is_home": false,
+                "competition": "Paulistão"
+            },
+            {
+                "opponent": "Santos",
+                "score": "1 - 1",
+                "result": "E",
+                "date": "22/01",
+                "winner": "Empate",
+                "is_home": false,
+                "competition": "Paulistão"
+            },
+            {
+                "opponent": "São Paulo",
+                "score": "1 - 1",
+                "result": "E",
+                "date": "18/01",
+                "winner": "Empate",
+                "is_home": false,
+                "competition": "Paulistão"
+            },
+            {
+                "opponent": "Bragantino",
+                "score": "0 - 3",
+                "result": "D",
+                "date": "15/01",
+                "winner": "Bragantino",
+                "is_home": false,
+                "competition": "Paulistão"
+            },
+            {
+                "opponent": "Ponte Preta",
+                "score": "3 - 0",
+                "result": "V",
+                "date": "11/01",
+                "winner": "Corinthians",
+                "is_home": true,
+                "competition": "Paulistão"
+            }
+        ],
+        "next": [
+            {
+                "opponent": "Guarani",
+                "date": "29/01 - 21:00",
+                "is_home": true,
+                "competition": "Paulistão",
+                "venue": "Neo Química Arena",
+                "odds": {
+                    "1x2": {
+                        "Betano": {
+                            "home": 1.55,
+                            "draw": 3.8,
+                            "away": 5.5
+                        },
+                        "Sportingbet": {
+                            "home": 1.58,
+                            "draw": 3.75,
+                            "away": 5.4
+                        },
+                        "KTO": {
+                            "home": 1.52,
+                            "draw": 3.85,
+                            "away": 5.6
+                        },
+                        "Superbet": {
+                            "home": 1.56,
+                            "draw": 3.78,
+                            "away": 5.48
+                        }
+                    },
+                    "over_under": {
+                        "Betano": {
+                            "over_05": 1.06,
+                            "over_15": 1.32,
+                            "over_25": 1.78
+                        },
+                        "Sportingbet": {
+                            "over_05": 1.07,
+                            "over_15": 1.34,
+                            "over_25": 1.8
+                        },
+                        "KTO": {
+                            "over_05": 1.05,
+                            "over_15": 1.3,
+                            "over_25": 1.75
+                        },
+                        "Superbet": {
+                            "over_05": 1.06,
+                            "over_15": 1.33,
+                            "over_25": 1.79
+                        }
+                    },
+                    "btts": {
+                        "Betano": {
+                            "yes": 2.0,
+                            "no": 1.78
+                        },
+                        "Sportingbet": {
+                            "yes": 2.02,
+                            "no": 1.76
+                        },
+                        "KTO": {
+                            "yes": 1.98,
+                            "no": 1.8
+                        },
+                        "Superbet": {
+                            "yes": 2.01,
+                            "no": 1.77
+                        }
+                    }
+                },
+                "source": "Google/Agregadores"
+            }
+        ]
+    },
+    "Cruzeiro": {
+        "lineup": {
+            "players": [
+                "Cássio",
+                "William",
+                "Fabrício Bruno",
+                "J. Jesus",
+                "Kaiki",
+                "Lucas Romero",
+                "Lucas Silva",
+                "Christian",
+                "Matheus Pereira",
+                "Barreal",
+                "Dinenno"
+            ],
+            "coach": "Fernando Diniz",
+            "status": "Mineiro"
+        },
+        "history": [
+            {
+                "opponent": "Atlético-MG",
+                "score": "1 - 2",
+                "result": "D",
+                "date": "25/01",
+                "winner": "Atlético-MG",
+                "is_home": false,
+                "competition": "Mineiro"
+            },
+            {
+                "opponent": "Uberlândia",
+                "score": "2 - 0",
+                "result": "V",
+                "date": "21/01",
+                "winner": "Cruzeiro",
+                "is_home": true,
+                "competition": "Mineiro"
+            },
+            {
+                "opponent": "Patrocinense",
+                "score": "3 - 1",
+                "result": "V",
+                "date": "17/01",
+                "winner": "Cruzeiro",
+                "is_home": false,
+                "competition": "Mineiro"
+            }
+        ],
+        "next": [
+            {
+                "opponent": "Athletic",
+                "date": "28/01 - 21:00",
+                "is_home": true,
+                "competition": "Mineiro",
+                "venue": "Mineirão",
+                "odds": {
+                    "1x2": {
+                        "Betano": {
+                            "home": 1.5,
+                            "draw": 4.0,
+                            "away": 6.0
+                        },
+                        "Sportingbet": {
+                            "home": 1.52,
+                            "draw": 3.95,
+                            "away": 5.9
+                        },
+                        "KTO": {
+                            "home": 1.48,
+                            "draw": 4.05,
+                            "away": 6.1
+                        },
+                        "Superbet": {
+                            "home": 1.51,
+                            "draw": 3.98,
+                            "away": 5.95
+                        }
+                    },
+                    "over_under": {
+                        "Betano": {
+                            "over_05": 1.05,
+                            "over_15": 1.28,
+                            "over_25": 1.72
+                        },
+                        "Sportingbet": {
+                            "over_05": 1.06,
+                            "over_15": 1.3,
+                            "over_25": 1.75
+                        },
+                        "KTO": {
+                            "over_05": 1.04,
+                            "over_15": 1.26,
+                            "over_25": 1.7
+                        },
+                        "Superbet": {
+                            "over_05": 1.05,
+                            "over_15": 1.29,
+                            "over_25": 1.73
+                        }
+                    },
+                    "btts": {
+                        "Betano": {
+                            "yes": 1.95,
+                            "no": 1.82
+                        },
+                        "Sportingbet": {
+                            "yes": 1.98,
+                            "no": 1.8
+                        },
+                        "KTO": {
+                            "yes": 1.92,
+                            "no": 1.85
+                        },
+                        "Superbet": {
+                            "yes": 1.96,
+                            "no": 1.81
+                        }
+                    }
+                },
+                "source": "Google/Agregadores"
+            }
+        ]
+    },
+    "Grêmio": {
+        "lineup": {
+            "players": [
+                "Marchesín",
+                "João Pedro",
+                "Geromel",
+                "Kannemann",
+                "Reinaldo",
+                "Villasanti",
+                "Pepê",
+                "Edenilson",
+                "Cristaldo",
+                "Pavon",
+                "Braithwaite"
+            ],
+            "coach": "Renato Gaúcho",
+            "status": "Gauchão"
+        },
+        "history": [
+            {
+                "opponent": "Internacional",
+                "score": "0 - 1",
+                "result": "D",
+                "date": "25/01",
+                "winner": "Internacional",
+                "is_home": true,
+                "competition": "Gauchão"
+            },
+            {
+                "opponent": "Juventude",
+                "score": "2 - 0",
+                "result": "V",
+                "date": "21/01",
+                "winner": "Grêmio",
+                "is_home": true,
+                "competition": "Gauchão"
+            },
+            {
+                "opponent": "Caxias",
+                "score": "1 - 0",
+                "result": "V",
+                "date": "17/01",
+                "winner": "Grêmio",
+                "is_home": false,
+                "competition": "Gauchão"
+            }
+        ],
+        "next": [
+            {
+                "opponent": "Brasil de Pelotas",
+                "date": "29/01 - 21:30",
+                "is_home": true,
+                "competition": "Gauchão",
+                "venue": "Arena do Grêmio",
+                "odds": {
+                    "1x2": {
+                        "Betano": {
+                            "home": 1.35,
+                            "draw": 4.8,
+                            "away": 8.0
+                        },
+                        "Sportingbet": {
+                            "home": 1.38,
+                            "draw": 4.7,
+                            "away": 7.8
+                        },
+                        "KTO": {
+                            "home": 1.32,
+                            "draw": 4.9,
+                            "away": 8.2
+                        },
+                        "Superbet": {
+                            "home": 1.36,
+                            "draw": 4.75,
+                            "away": 7.9
+                        }
+                    },
+                    "over_under": {
+                        "Betano": {
+                            "over_05": 1.04,
+                            "over_15": 1.25,
+                            "over_25": 1.68
+                        },
+                        "Sportingbet": {
+                            "over_05": 1.05,
+                            "over_15": 1.27,
+                            "over_25": 1.7
+                        },
+                        "KTO": {
+                            "over_05": 1.03,
+                            "over_15": 1.23,
+                            "over_25": 1.65
+                        },
+                        "Superbet": {
+                            "over_05": 1.04,
+                            "over_15": 1.26,
+                            "over_25": 1.69
+                        }
+                    },
+                    "btts": {
+                        "Betano": {
+                            "yes": 2.05,
+                            "no": 1.72
+                        },
+                        "Sportingbet": {
+                            "yes": 2.08,
+                            "no": 1.7
+                        },
+                        "KTO": {
+                            "yes": 2.02,
+                            "no": 1.75
+                        },
+                        "Superbet": {
+                            "yes": 2.06,
+                            "no": 1.71
+                        }
+                    }
+                },
+                "source": "Google/Agregadores"
+            }
+        ]
+    },
+    "Internacional": {
+        "lineup": {
+            "players": [
+                "Rochet",
+                "Bustos",
+                "Vitão",
+                "Mercado",
+                "Bernabei",
+                "Fernando",
+                "Thiago Maia",
+                "Bruno Henrique",
+                "Alan Patrick",
+                "Wesley",
+                "Borré"
+            ],
+            "coach": "Roger Machado",
+            "status": "Gauchão"
+        },
+        "history": [
+            {
+                "opponent": "Grêmio",
+                "score": "1 - 0",
+                "result": "V",
+                "date": "25/01",
+                "winner": "Internacional",
+                "is_home": false,
+                "competition": "Gauchão"
+            },
+            {
+                "opponent": "Pelotas",
+                "score": "2 - 1",
+                "result": "V",
+                "date": "20/01",
+                "winner": "Internacional",
+                "is_home": true,
+                "competition": "Gauchão"
+            },
+            {
+                "opponent": "Ypiranga",
+                "score": "1 - 1",
+                "result": "E",
+                "date": "15/01",
+                "winner": "Empate",
+                "is_home": false,
+                "competition": "Gauchão"
+            }
+        ],
+        "next": [
+            {
+                "opponent": "São José",
+                "date": "28/01 - 19:30",
+                "is_home": true,
+                "competition": "Gauchão",
+                "venue": "Beira-Rio",
+                "odds": {
+                    "1x2": {
+                        "Betano": {
+                            "home": 1.3,
+                            "draw": 5.0,
+                            "away": 9.0
+                        },
+                        "Sportingbet": {
+                            "home": 1.32,
+                            "draw": 4.9,
+                            "away": 8.8
+                        },
+                        "KTO": {
+                            "home": 1.28,
+                            "draw": 5.1,
+                            "away": 9.2
+                        },
+                        "Superbet": {
+                            "home": 1.31,
+                            "draw": 4.95,
+                            "away": 8.9
+                        }
+                    },
+                    "over_under": {
+                        "Betano": {
+                            "over_05": 1.04,
+                            "over_15": 1.24,
+                            "over_25": 1.66
+                        },
+                        "Sportingbet": {
+                            "over_05": 1.05,
+                            "over_15": 1.26,
+                            "over_25": 1.68
+                        },
+                        "KTO": {
+                            "over_05": 1.03,
+                            "over_15": 1.22,
+                            "over_25": 1.64
+                        },
+                        "Superbet": {
+                            "over_05": 1.04,
+                            "over_15": 1.25,
+                            "over_25": 1.67
+                        }
+                    },
+                    "btts": {
+                        "Betano": {
+                            "yes": 2.08,
+                            "no": 1.7
+                        },
+                        "Sportingbet": {
+                            "yes": 2.1,
+                            "no": 1.68
+                        },
+                        "KTO": {
+                            "yes": 2.05,
+                            "no": 1.72
+                        },
+                        "Superbet": {
+                            "yes": 2.09,
+                            "no": 1.69
+                        }
+                    }
+                },
+                "source": "Google/Agregadores"
+            }
+        ]
+    },
+    "Man City": {
+        "lineup": {
+            "players": [
+                "Donnarumma",
+                "Rico Lewis",
+                "Khusanov",
+                "Aké",
+                "Aït-Nouri",
+                "Nico González",
+                "Bernardo Silva",
+                "Reijnders",
+                "Phil Foden",
+                "Doku",
+                "Haaland"
+            ],
+            "coach": "Pep Guardiola",
+            "status": "Premier League"
+        },
+        "history": [
+            {
+                "opponent": "Wolves",
+                "score": "2 - 0",
+                "result": "V",
+                "date": "24/01",
+                "winner": "Man City",
+                "is_home": true,
+                "competition": "Premier League"
+            },
+            {
+                "opponent": "Bodø/Glimt",
+                "score": "3 - 1",
+                "result": "V",
+                "date": "20/01",
+                "winner": "Man City",
+                "is_home": false,
+                "competition": "Champions"
+            },
+            {
+                "opponent": "Man Utd",
+                "score": "2 - 0",
+                "result": "V",
+                "date": "17/01",
+                "winner": "Man City",
+                "is_home": true,
+                "competition": "Premier League"
+            },
+            {
+                "opponent": "Newcastle",
+                "score": "0 - 2",
+                "result": "D",
+                "date": "13/01",
+                "winner": "Newcastle",
+                "is_home": false,
+                "competition": "League Cup"
+            },
+            {
+                "opponent": "Exeter City",
+                "score": "10 - 1",
+                "result": "V",
+                "date": "10/01",
+                "winner": "Man City",
+                "is_home": true,
+                "competition": "FA Cup"
+            }
+        ],
+        "next": [
+            {
+                "opponent": "Galatasaray",
+                "date": "28/01 - 17:00",
+                "is_home": true,
+                "competition": "Champions League",
+                "venue": "Etihad Stadium",
+                "odds": {
+                    "1x2": {
+                        "Betano": {
+                            "home": 1.15,
+                            "draw": 7.5,
+                            "away": 15.0
+                        },
+                        "Sportingbet": {
+                            "home": 1.18,
+                            "draw": 7.3,
+                            "away": 14.5
+                        },
+                        "KTO": {
+                            "home": 1.12,
+                            "draw": 7.7,
+                            "away": 15.5
+                        },
+                        "Superbet": {
+                            "home": 1.16,
+                            "draw": 7.4,
+                            "away": 14.8
+                        }
+                    },
+                    "over_under": {
+                        "Betano": {
+                            "over_05": 1.02,
+                            "over_15": 1.15,
+                            "over_25": 1.45
+                        },
+                        "Sportingbet": {
+                            "over_05": 1.03,
+                            "over_15": 1.17,
+                            "over_25": 1.48
+                        },
+                        "KTO": {
+                            "over_05": 1.01,
+                            "over_15": 1.13,
+                            "over_25": 1.42
+                        },
+                        "Superbet": {
+                            "over_05": 1.02,
+                            "over_15": 1.16,
+                            "over_25": 1.46
+                        }
+                    },
+                    "btts": {
+                        "Betano": {
+                            "yes": 1.85,
+                            "no": 1.9
+                        },
+                        "Sportingbet": {
+                            "yes": 1.88,
+                            "no": 1.88
+                        },
+                        "KTO": {
+                            "yes": 1.82,
+                            "no": 1.92
+                        },
+                        "Superbet": {
+                            "yes": 1.86,
+                            "no": 1.89
+                        }
+                    }
+                },
+                "source": "Google/Agregadores"
+            }
+        ]
+    },
+    "Real Madrid": {
+        "lineup": {
+            "players": [
+                "Courtois",
+                "Valverde",
+                "Asencio",
+                "Huijsen",
+                "Carreras",
+                "Camavinga",
+                "Bellingham",
+                "Arda Guler",
+                "Vini Jr",
+                "Mbappé",
+                "Rodrigo"
+            ],
+            "coach": "Ancelotti",
+            "status": "LaLiga"
+        },
+        "history": [
+            {
+                "opponent": "Villarreal",
+                "score": "2 - 0",
+                "result": "V",
+                "date": "24/01",
+                "winner": "Real Madrid",
+                "is_home": false,
+                "competition": "LaLiga"
+            },
+            {
+                "opponent": "Levante",
+                "score": "2 - 0",
+                "result": "V",
+                "date": "17/01",
+                "winner": "Real Madrid",
+                "is_home": true,
+                "competition": "LaLiga"
+            },
+            {
+                "opponent": "Barcelona",
+                "score": "2 - 3",
+                "result": "D",
+                "date": "11/01",
+                "winner": "Barcelona",
+                "is_home": false,
+                "competition": "Supercopa"
+            },
+            {
+                "opponent": "Real Betis",
+                "score": "5 - 1",
+                "result": "V",
+                "date": "04/01",
+                "winner": "Real Madrid",
+                "is_home": true,
+                "competition": "LaLiga"
+            },
+            {
+                "opponent": "Sevilla",
+                "score": "2 - 0",
+                "result": "V",
+                "date": "20/12",
+                "winner": "Real Madrid",
+                "is_home": false,
+                "competition": "LaLiga"
+            }
+        ],
+        "next": [
+            {
+                "opponent": "Benfica",
+                "date": "28/01 - 17:00",
+                "is_home": false,
+                "competition": "Champions League",
+                "venue": "Estádio da Luz",
+                "odds": {
+                    "1x2": {
+                        "Betano": {
+                            "home": 3.2,
+                            "draw": 3.5,
+                            "away": 2.2
+                        },
+                        "Sportingbet": {
+                            "home": 3.15,
+                            "draw": 3.45,
+                            "away": 2.25
+                        },
+                        "KTO": {
+                            "home": 3.25,
+                            "draw": 3.55,
+                            "away": 2.18
+                        },
+                        "Superbet": {
+                            "home": 3.18,
+                            "draw": 3.48,
+                            "away": 2.22
+                        }
+                    },
+                    "over_under": {
+                        "Betano": {
+                            "over_05": 1.06,
+                            "over_15": 1.3,
+                            "over_25": 1.75
+                        },
+                        "Sportingbet": {
+                            "over_05": 1.07,
+                            "over_15": 1.32,
+                            "over_25": 1.78
+                        },
+                        "KTO": {
+                            "over_05": 1.05,
+                            "over_15": 1.28,
+                            "over_25": 1.72
+                        },
+                        "Superbet": {
+                            "over_05": 1.06,
+                            "over_15": 1.31,
+                            "over_25": 1.76
+                        }
+                    },
+                    "btts": {
+                        "Betano": {
+                            "yes": 1.7,
+                            "no": 2.1
+                        },
+                        "Sportingbet": {
+                            "yes": 1.72,
+                            "no": 2.08
+                        },
+                        "KTO": {
+                            "yes": 1.68,
+                            "no": 2.12
+                        },
+                        "Superbet": {
+                            "yes": 1.71,
+                            "no": 2.09
+                        }
+                    }
+                },
+                "source": "Google/Agregadores"
+            }
+        ]
+    },
+    "Barcelona": {
+        "lineup": {
+            "players": [
+                "Ter Stegen",
+                "Koundé",
+                "Cubarsí",
+                "Iñigo",
+                "Balde",
+                "Casadó",
+                "Pedri",
+                "Yamal",
+                "Olmo",
+                "Raphinha",
+                "Lewandowski"
+            ],
+            "coach": "Hansi Flick",
+            "status": "LaLiga"
+        },
+        "history": [
+            {
+                "opponent": "Real Oviedo",
+                "score": "3 - 0",
+                "result": "V",
+                "date": "25/01",
+                "winner": "Barcelona",
+                "is_home": true,
+                "competition": "Copa do Rei"
+            },
+            {
+                "opponent": "Slavia Praga",
+                "score": "4 - 2",
+                "result": "V",
+                "date": "21/01",
+                "winner": "Barcelona",
+                "is_home": false,
+                "competition": "Champions"
+            },
+            {
+                "opponent": "Real Sociedad",
+                "score": "1 - 2",
+                "result": "D",
+                "date": "18/01",
+                "winner": "Real Sociedad",
+                "is_home": false,
+                "competition": "LaLiga"
+            },
+            {
+                "opponent": "Racing Santander",
+                "score": "2 - 0",
+                "result": "V",
+                "date": "15/01",
+                "winner": "Barcelona",
+                "is_home": false,
+                "competition": "Copa do Rei"
+            },
+            {
+                "opponent": "Real Madrid",
+                "score": "3 - 2",
+                "result": "V",
+                "date": "11/01",
+                "winner": "Barcelona",
+                "is_home": true,
+                "competition": "Supercopa"
+            }
+        ],
+        "next": [
+            {
+                "opponent": "Villarreal",
+                "date": "28/01 - 19:00",
+                "is_home": true,
+                "competition": "LaLiga",
+                "venue": "Camp Nou",
+                "odds": {
+                    "1x2": {
+                        "Betano": {
+                            "home": 1.45,
+                            "draw": 4.2,
+                            "away": 6.5
+                        },
+                        "Sportingbet": {
+                            "home": 1.48,
+                            "draw": 4.15,
+                            "away": 6.4
+                        },
+                        "KTO": {
+                            "home": 1.42,
+                            "draw": 4.25,
+                            "away": 6.6
+                        },
+                        "Superbet": {
+                            "home": 1.46,
+                            "draw": 4.18,
+                            "away": 6.45
+                        }
+                    },
+                    "over_under": {
+                        "Betano": {
+                            "over_05": 1.04,
+                            "over_15": 1.25,
+                            "over_25": 1.68
+                        },
+                        "Sportingbet": {
+                            "over_05": 1.05,
+                            "over_15": 1.27,
+                            "over_25": 1.7
+                        },
+                        "KTO": {
+                            "over_05": 1.03,
+                            "over_15": 1.23,
+                            "over_25": 1.65
+                        },
+                        "Superbet": {
+                            "over_05": 1.04,
+                            "over_15": 1.26,
+                            "over_25": 1.69
+                        }
+                    },
+                    "btts": {
+                        "Betano": {
+                            "yes": 1.8,
+                            "no": 1.98
+                        },
+                        "Sportingbet": {
+                            "yes": 1.82,
+                            "no": 1.96
+                        },
+                        "KTO": {
+                            "yes": 1.78,
+                            "no": 2.0
+                        },
+                        "Superbet": {
+                            "yes": 1.81,
+                            "no": 1.97
+                        }
+                    }
+                },
+                "source": "Google/Agregadores"
+            }
+        ]
+    }
+}

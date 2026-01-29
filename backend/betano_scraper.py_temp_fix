@@ -1,0 +1,137 @@
+def analyze_opportunity(game: Dict) -> Dict:
+    home_score = game.get("score", {}).get("home", 0)
+    away_score = game.get("score", {}).get("away", 0)
+    minute = game.get("minute", 0)
+    total_goals = home_score + away_score
+    stats = game.get("stats", {})
+    corners = stats.get("corners", {"home": 0, "away": 0})
+    total_corners = corners.get("home", 0) + corners.get("away", 0)
+
+    # Detectar se o mercado está fechado (reta final ou suspenso na Betano)
+    is_locked = (minute >= 88) or game.get('is_suspended', False)
+    
+    # REGRA DE OURO: Não sugerir nada se o mercado estiver fechado ou suspenso
+    if is_locked:
+        return {
+            "is_opportunity": False,
+            "is_locked": True,
+            "warning": "🚨 MERCADO SUSPENSO / ENCERRADO",
+            "confidence": 0,
+            "best_opportunity": None
+        }
+
+    is_explicit = False
+    opportunities = []
+
+    # 1. UNDER GOALS
+    if minute >= 55:
+        target = total_goals + 2.5
+        target = int(target) + 0.5
+        conf = min(98, 70 + (minute-55) + (6-total_goals)*3)
+        opportunities.append({
+            "type": "UNDER",
+            "label": f"UNDER {target}",
+            "confidence": int(conf),
+            "recommendation": f"Menos de {target} Gols"
+        })
+
+    # 2. MATCH WINNER
+    diff = abs(home_score - away_score)
+    if minute >= 50:
+        winner_name = game.get("home") if home_score > away_score else game.get("away")
+        if diff >= 1:
+            conf = min(99, 75 + (minute - 50) + (diff * 5))
+            opportunities.append({
+                "type": "WINNER",
+                "label": "VITÓRIA",
+                "confidence": int(conf),
+                "recommendation": f"Vitória {winner_name}"
+            })
+
+    # 3. CORNERS (Escanteios) - Sugestão apenas se disponível e até 45 minutos (1º Tempo)
+    if minute <= 45 and stats.get('has_real_corners'):
+        dangerous_attacks = stats.get("dangerous_attacks", {"home": 0, "away": 0})
+        total_attacks = dangerous_attacks.get("home", 0) + dangerous_attacks.get("away", 0)
+        
+        # Lógica: Se volume alto até 45min, sugere +2 cantos no máximo
+        if total_corners > 7:
+            target_corners = total_corners + 2.0
+            conf = min(96, 75 + (total_corners * 2))
+            opportunities.append({
+                "type": "CORNERS",
+                "label": "🔥 CANTO VOL.",
+                "confidence": int(conf),
+                "recommendation": f"Mais de {target_corners} Cantos"
+            })
+        elif total_corners > 4:
+            # Heurística para volume moderado no 1º tempo
+            target_corners = total_corners + 2.0
+            attacks_per_min = total_attacks / max(1, minute)
+            conf = min(92, 65 + (attacks_per_min * 15) + (total_corners * 2))
+            
+            opportunities.append({
+                "type": "CORNERS",
+                "label": "ESCANT.",
+                "confidence": int(conf),
+                "recommendation": f"Mais de {target_corners} Cantos"
+            })
+
+    # Prioridade para os últimos 15 minutos (75-90') OU Canto Vol alto no HT
+    is_priority = (75 <= minute <= 90) or (minute <= 45 and any(o['label'] == '🔥 CANTO VOL.' for o in opportunities))
+
+    # Lógica de Seleção: Focar no mais SEGURO (Under e Vitória tem prioridade sobre Escanteios)
+    if opportunities:
+        # Penaliza escanteios na escolha da 'sugestão principal' para priorizar segurança
+        def sort_priority(opp):
+            score = opp['confidence']
+            if opp['type'] == 'CORNERS':
+                score -= 15 # Penalidade para não ser a principal a menos que seja muito óbvia
+            return score
+
+        best = max(opportunities, key=sort_priority)
+        
+        # Detalhes extras do jogo para o card
+        match_context = ""
+        if total_goals > 3:
+            match_context = "Jogo movimentado, alta intensidade."
+        elif minute > 70 and total_goals <= 1:
+            match_context = "Jogo truncado, forte tendência Under."
+        
+        if diff == 0:
+            match_context += " Empate persistente, pressão equilibrada."
+        else:
+            match_context += f" Domínio claro de {game.get('home') if home_score > away_score else game.get('away')}."
+
+        is_explicit = best['confidence'] >= 95
+        
+        return {
+            "is_opportunity": True,
+            "is_priority": is_priority,
+            "is_locked": is_locked,
+            "is_explicit": is_explicit,
+            "best_opportunity": best,
+            "all_opportunities": opportunities,
+            "opportunity_type": best['type'],
+            "confidence": best['confidence'] if not is_locked else 0,
+            "recommendation": best['recommendation'],
+            "confidence_label": "Índice de Assertividade",
+            "description": f"{match_context}",
+            "detailed_stats": f"Ataques: {stats.get('dangerous_attacks', {}).get('home')} vs {stats.get('dangerous_attacks', {}).get('away')}",
+            "warning": "🚨 ENTRADA SUSPENSA" if game.get('is_suspended') else ("⚠️ OPORTUNIDADE ENCERRADA" if is_locked else (f"Minuto {minute}': Mercado de alta liquidez." if not is_priority else "⚠️ RETA FINAL: OPORTUNIDADE CRÍTICA")),
+            "direct_link": game.get('url')
+        }
+
+    # FALLBACK
+    return {
+        "is_opportunity": False, # Desativa oportunidade se não houver mercados seguros
+        "is_priority": is_priority,
+        "type": "ANALYZING",
+        "opportunity_type": "ANALYZING",
+        "confidence": 0,
+        "confidence_label": "Monitoramento",
+        "recommendation": "Aguardando Volume",
+        "all_opportunities": [],
+        "description": "IA aguardando aumento de volume ofensivo para Under/Vitória.",
+        "warning": f"Minuto {minute}': Padrões em formação.",
+        "direct_link": game.get('url')
+    }
