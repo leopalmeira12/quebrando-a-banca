@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#030408] text-white font-sans antialiased;
+  }
+}
+
+.brutalist-panel {
+  @apply bg-[#0a0c12] border border-white/5 relative overflow-hidden;
+  border-radius: 2px;
+}
+
+.brutalist-input {
+  @apply w-full bg-[#030408] border border-white/10 p-4 text-white focus:border-emerald-500 focus:outline-none transition-all;
+  border-radius: 2px;
+}
+
+.brutalist-button {
+  @apply bg-emerald-500 text-black font-black uppercase tracking-widest px-8 py-4 hover:bg-emerald-400 transition-all active:scale-[0.98];
+  border-radius: 2px;
+}
+
+.brutalist-button-outline {
+  @apply bg-transparent border border-white/10 text-white font-black uppercase tracking-widest px-8 py-4 hover:bg-white/5 transition-all active:scale-[0.98];
+  border-radius: 2px;
+}
+
+.emerald-glow {
+  box-shadow: 0 0 30px rgba(16, 185, 129, 0.2);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #030408;
+}
+::-webkit-scrollbar-thumb {
+  background: #10b981;
+}
