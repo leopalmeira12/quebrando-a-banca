@@ -52,38 +52,44 @@
         var cards = [];
         var seen = new Set();
 
-        // Directly query all hyperlinks on the page
-        var links = document.querySelectorAll("a[href]");
+        // Betano uses images or background images for all lobby cards.
+        // We find all visual images, then walk up to find the card container.
+        var imgs = document.querySelectorAll("img, [style*='background-image']");
 
-        for (var i = 0; i < links.length; i++) {
-            var el = links[i];
-            var href = el.href;
+        for (var i = 0; i < imgs.length; i++) {
+            var el = imgs[i];
 
-            // Target only game links
-            if (!href || !href.includes("/games/")) continue;
+            // Walk up to find the card container layout
+            var best = null;
+            var cur = el;
+            for (var j = 0; j < 15 && cur; j++) {
+                var r = cur.getBoundingClientRect();
+                var w = r.width, h = r.height;
+                // Standard casino card proportions
+                if (w > 80 && w < 400 && h > 60 && h < 300) {
+                    best = cur;
+                }
+                cur = cur.parentElement;
+            }
 
-            // Betano's visual cards are big block links. 
-            // We use dimensions to guarantee we are hooking the aura onto the actual card, not an inline text link.
-            var r = el.getBoundingClientRect();
-            var w = r.width, h = r.height;
-            if (w < 80 || w > 450 || h < 60 || h > 400) continue;
+            if (!best || best === document.body || seen.has(best)) continue;
 
-            // Specifically skip header/breadcrumb elements 
-            if (r.top < 100 && r.height < 60) continue;
+            // Explicitly skip top header / navigation / breadcrumbs
+            var br = best.getBoundingClientRect();
+            if (br.top < 120 && br.height < 60) continue;
 
-            if (seen.has(el)) continue;
-            seen.add(el);
+            seen.add(best);
 
-            // Extract the purest Table Name possible
+            // Prioritize clean image alt-text
             var name = "";
-            var img = el.querySelector("img");
-            if (img && img.alt) name = img.alt;
-            if (!name && el.getAttribute("aria-label")) name = el.getAttribute("aria-label");
-            if (!name && el.title) name = el.title;
+            var imgObj = best.querySelector("img");
+            if (imgObj && imgObj.alt) name = imgObj.alt;
+            if (!name && best.getAttribute("aria-label")) name = best.getAttribute("aria-label");
+            if (!name && best.title) name = best.title;
 
-            // Fallback to reading inner texts cleanly
+            // Fallback to text inside the card
             if (!name) {
-                var texts = el.innerText.split("\n");
+                var texts = best.innerText.split("\n");
                 for (var t = 0; t < texts.length; t++) {
                     var line = texts[t].trim();
                     if (line.length > 4 && line.length < 50 && !line.includes("R$") && isNaN(parseInt(line))) {
@@ -93,14 +99,16 @@
                 }
             }
 
-            // Ultimate fallback using URL Slug
-            if (!name) {
-                var match = href.match(/\/games\/([^/]*)/);
-                if (match) name = match[1].replace(/-/g, " ");
-            }
-
             if (name) {
-                cards.push({ el: el, name: name.trim(), href: href, key: norm(name) });
+                // Attempt to resolve url if it's there
+                var href = "";
+                if (best.tagName === "A" && best.href) href = best.href;
+                if (!href) {
+                    var a = best.querySelector("a[href]");
+                    if (a) href = a.href;
+                }
+
+                cards.push({ el: best, name: name.trim(), href: href, key: norm(name) });
             }
         }
 
