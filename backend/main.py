@@ -14,13 +14,20 @@ from sqlalchemy.orm import sessionmaker
 
 # ── OCR ENGINE ──
 try:
-    from rapidocr_onnxruntime import RapidOCR
+    import pytesseract
     from PIL import Image
-    ocr_engine = RapidOCR()
-    print("[AI] RapidOCR Engine LOADED OK")
+    # Configuração padrao do Tesseract no Windows
+    tesseract_path = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+    if os.path.exists(tesseract_path):
+        pytesseract.pytesseract.tesseract_cmd = tesseract_path
+    elif os.path.exists(r'C:\Program Files (x86)\Tesseract-OCR\tesseract.exe'):
+        pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files (x86)\Tesseract-OCR\tesseract.exe'
+        
+    ocr_engine = True  # Sinalizador de que Pytesseract está ativo
+    print("[AI] Tesseract OCR Engine LOADED OK")
 except Exception as e:
-    ocr_engine = None
-    print(f"[AI] OCR não disponível: {e}")
+    ocr_engine = False
+    print(f"[AI] Tesseract OCR não disponível: {e}")
 
 app = FastAPI(title="Dozen Tracker AI")
 
@@ -149,8 +156,9 @@ def process_numbers(db, name, numbers):
 def process_screenshot(base64_image):
     if not ocr_engine:
         return [], []
-    
+        
     try:
+        # Converter Imagem Base64 -> PIL Image
         if "," in base64_image:
             base64_image = base64_image.split(",", 1)[1]
         
@@ -158,28 +166,28 @@ def process_screenshot(base64_image):
         img = Image.open(io.BytesIO(image_data))
         
         import numpy as np
-        img_array = np.array(img)
         
-        result, _ = ocr_engine(img_array)
+        # Realizando o OCR via Tesseract
+        import pytesseract
+        data = pytesseract.image_to_data(img, output_type=pytesseract.Output.DICT)
         
-        if not result:
-            return [], []
-        
-        # Parse OCR results
         room_kw = re.compile(r'(roulette|roleta|ruleta)', re.IGNORECASE)
         num_pattern = re.compile(r'^\s*(\d{1,2})\s*$')
         
         rooms_found = []
         nums_found = []
         
-        for item in result:
-            if isinstance(item, (list, tuple)) and len(item) >= 2:
-                text = str(item[1]).strip()
-                bbox = item[0]
-                if not isinstance(bbox, (list, tuple)) or len(bbox) < 4: continue
+        n_boxes = len(data['text'])
+        for i in range(n_boxes):
+            if int(data['conf'][i]) > 30: # Ignora detecções de péssima qualidade (conf > 30)
+                text = str(data['text'][i]).strip()
+                if not text:
+                    continue
                 
-                x_center = (bbox[0][0] + bbox[1][0]) / 2
-                y_center = (bbox[0][1] + bbox[2][1]) / 2
+                # Extrai as coordenadas XYZ da palavra lida na tela
+                x, y, w, h = data['left'][i], data['top'][i], data['width'][i], data['height'][i]
+                x_center = x + w / 2
+                y_center = y + h / 2
                 
                 if len(text) > 4 and room_kw.search(text):
                     rooms_found.append({"name": text, "x": x_center, "y": y_center, "numbers": []})
