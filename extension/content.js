@@ -47,60 +47,63 @@
     }
 
     /* ── FIND CARDS ── */
+    /* ── FIND CARDS ── */
     function findCards() {
         var cards = [];
         var seen = new Set();
-        var kw = /roulette|roleta|ruleta/i;
 
-        var walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, {
-            acceptNode: function (n) {
-                var tag = n.parentElement ? n.parentElement.tagName : "";
-                if (tag === "SCRIPT" || tag === "STYLE") return NodeFilter.FILTER_REJECT;
-                return NodeFilter.FILTER_ACCEPT;
-            }
-        });
+        // Directly query all hyperlinks on the page
+        var links = document.querySelectorAll("a[href]");
 
-        var node;
-        while ((node = walker.nextNode())) {
-            var txt = node.textContent.trim();
-            if (txt.length < 5 || txt.length > 60 || !kw.test(txt)) continue;
+        for (var i = 0; i < links.length; i++) {
+            var el = links[i];
+            var href = el.href;
 
-            var el = node.parentElement;
-            var best = null;
-            for (var i = 0; i < 15 && el; i++) {
-                var r = el.getBoundingClientRect();
-                var w = r.width, h = r.height;
-                if (w > 100 && w < 350 && h > 80 && h < 300 && h / w > 0.4 && h / w < 2.5) {
-                    best = el;
+            // Target only game links
+            if (!href || !href.includes("/games/")) continue;
+
+            // Betano's visual cards are big block links. 
+            // We use dimensions to guarantee we are hooking the aura onto the actual card, not an inline text link.
+            var r = el.getBoundingClientRect();
+            var w = r.width, h = r.height;
+            if (w < 80 || w > 450 || h < 60 || h > 400) continue;
+
+            // Specifically skip header/breadcrumb elements 
+            if (r.top < 100 && r.height < 60) continue;
+
+            if (seen.has(el)) continue;
+            seen.add(el);
+
+            // Extract the purest Table Name possible
+            var name = "";
+            var img = el.querySelector("img");
+            if (img && img.alt) name = img.alt;
+            if (!name && el.getAttribute("aria-label")) name = el.getAttribute("aria-label");
+            if (!name && el.title) name = el.title;
+
+            // Fallback to reading inner texts cleanly
+            if (!name) {
+                var texts = el.innerText.split("\n");
+                for (var t = 0; t < texts.length; t++) {
+                    var line = texts[t].trim();
+                    if (line.length > 4 && line.length < 50 && !line.includes("R$") && isNaN(parseInt(line))) {
+                        name = line;
+                        break;
+                    }
                 }
-                el = el.parentElement;
             }
 
-            if (!best || best === document.body || seen.has(best)) continue;
-
-            // Skip header/breadcrumb (top of page, small height)
-            var br = best.getBoundingClientRect();
-            if (br.top < 130 && br.height < 80) continue;
-
-            seen.add(best);
-
-            // Extract href: walk up to find <a> with /games/ in href
-            var href = "";
-            var cur = best;
-            for (var j = 0; j < 20 && cur; j++) {
-                if (cur.tagName === "A" && cur.href) {
-                    href = cur.href;
-                    break;
-                }
-                cur = cur.parentElement;
-            }
-            if (!href) {
-                var ia = best.querySelector("a[href]");
-                if (ia && ia.href) href = ia.href;
+            // Ultimate fallback using URL Slug
+            if (!name) {
+                var match = href.match(/\/games\/([^/]*)/);
+                if (match) name = match[1].replace(/-/g, " ");
             }
 
-            cards.push({ el: best, name: txt, href: href, key: norm(txt) });
+            if (name) {
+                cards.push({ el: el, name: name.trim(), href: href, key: norm(name) });
+            }
         }
+
         return cards;
     }
 
