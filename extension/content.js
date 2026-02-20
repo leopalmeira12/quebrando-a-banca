@@ -142,21 +142,6 @@
         setTimeout(function () { if (box.parentElement) { box.classList.remove("on"); setTimeout(function () { box.remove(); }, 350); } }, 25000);
     }
 
-    /* ── IN-GAME HUD ── */
-    var isGame = window.location.href.includes("/games/") || window.location.href.includes("/tables/");
-    var inGameHud = null;
-
-    function buildInGameHud() {
-        inGameHud = document.createElement("div");
-        inGameHud.id = "dt-ingame-hud";
-        inGameHud.style.cssText = "position:fixed;top:15px;left:50%;transform:translateX(-50%);z-index:99999999;background:rgba(10,14,20,0.92);border:2px solid #1e2530;padding:12px 24px;border-radius:12px;color:#fff;font-family:-apple-system,system-ui,sans-serif;text-align:center;box-shadow:0 10px 30px rgba(0,0,0,0.5);backdrop-filter:blur(10px);pointer-events:none;min-width:220px;transition:all 0.3s ease;";
-        inGameHud.innerHTML =
-            '<div style="font-size:9px;color:#00ffa3;letter-spacing:1px;text-transform:uppercase;margin-bottom:6px;font-weight:700">Vision AI: Analyzador</div>' +
-            '<div id="dt-hud-st" style="font-size:18px;font-weight:900;letter-spacing:0.5px;text-transform:uppercase;transition:all 0.3s">Avaliando...</div>' +
-            '<div id="dt-hud-zz" style="font-size:11px;color:#8b949e;margin-top:6px;font-weight:500">-</div>';
-        document.body.appendChild(inGameHud);
-    }
-
     /* ── ACK ── */
     document.addEventListener("click", function (e) {
         var t = e.target;
@@ -175,50 +160,6 @@
 
     /* ── TICK ── */
     async function tick() {
-        // --- IN GAME HUD LOGIC ---
-        if (isGame) {
-            if (!inGameHud) buildInGameHud();
-
-            var stG = { rooms: [], threshold: 6 };
-            try { var resG = await fetch(BACKEND + "/roulette/status"); if (resG.ok) stG = await resG.json(); } catch (e) { }
-
-            var thG = stG.threshold || 6;
-            var roomsG = stG.rooms || [];
-            var title = norm(document.title) || norm(location.href);
-            var activeRoom = null;
-
-            // Try to perfectly match current room from title/url
-            for (var i = 0; i < roomsG.length; i++) {
-                var rn = norm(roomsG[i].room_name);
-                if (title.includes(rn) || rn.includes(title)) { activeRoom = roomsG[i]; break; }
-            }
-            // If completely blind but OCR found "Current Room" (fallback created dynamically by backend)
-            if (!activeRoom && roomsG.length > 0) {
-                // In a single-room context, assume the most active or "Current Room" is what we are looking at
-                roomsG.sort(function (a, b) { return (b.zigzag || 0) - (a.zigzag || 0); });
-                activeRoom = roomsG[0];
-            }
-
-            if (activeRoom) {
-                var zz = activeRoom.zigzag || 0;
-                var ratio = zz / thG;
-                var lbl = "ESPERAR \u23F3";
-                var col = "#fff";
-                var glow = "none";
-                var bcol = "#1e2530";
-
-                if (ratio >= 1) { lbl = "ENTRAR AGORA \uD83C\uDFAF"; col = "#ff4757"; glow = "0 0 15px rgba(255,71,87,0.6)"; bcol = "#ff4757"; }
-                else if (ratio >= 0.6) { lbl = "ATEN\u00C7\u00C3O \u26A0"; col = "#ffa502"; bcol = "#ffa502"; }
-
-                inGameHud.style.borderColor = bcol;
-                inGameHud.style.boxShadow = ratio >= 1 ? "0 10px 40px rgba(255,71,87,0.3)" : "0 10px 30px rgba(0,0,0,0.5)";
-                document.getElementById("dt-hud-st").innerHTML = '<span style="color:' + col + ';text-shadow:' + glow + '">' + lbl + '</span>';
-                document.getElementById("dt-hud-zz").textContent = "Zigzag Atual: " + zz + "x (Gatilho: " + thG + ")";
-
-            }
-            // Do not return here. Betano often shows lobby cards underneath the active game video.
-        }
-
         // --- LOBBY LOGIC ---
         var cards = findCards();
         hasCards = cards.length > 0;
