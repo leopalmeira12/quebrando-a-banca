@@ -1,8 +1,8 @@
 /**
- * DOZEN TRACKER v34.1 — URL SCRAPER + CLEAN SIGNAL
+ * DOZEN TRACKER v35.2 — BULLETPROOF AURA + SIGNAL
  * 
- * Scrapes real hrefs from Betano cards and saves to chrome.storage.
- * Signal toast uses real URLs. No junk data.
+ * Multi-strategy card finder: TreeWalker + querySelectorAll fallback.
+ * Aura works on lobby AND in-game page thumbnails.
  */
 (function () {
     if (window.__DT_ACTIVE) return;
@@ -34,7 +34,8 @@
         "#dt-sig .s-info b{color:#ff6b6b!important}",
         "#dt-sig .s-btn{display:block!important;background:#00ffa3!important;color:#000!important;text-align:center!important;padding:8px!important;border-radius:6px!important;font-weight:700!important;font-size:12px!important;text-decoration:none!important;cursor:pointer!important;transition:background .2s!important}",
         "#dt-sig .s-btn:hover{background:#00e090!important}",
-        "#dt-sig .s-x{position:absolute!important;top:6px!important;right:10px!important;color:#484f58!important;cursor:pointer!important;font-size:16px!important;background:none!important;border:none!important;line-height:1!important;padding:4px!important}"
+        "#dt-sig .s-x{position:absolute!important;top:6px!important;right:10px!important;color:#484f58!important;cursor:pointer!important;font-size:16px!important;background:none!important;border:none!important;line-height:1!important;padding:4px!important}",
+        "#dt-dbg{position:fixed!important;bottom:4px!important;left:4px!important;z-index:99999999!important;background:#000c!important;color:#00ffa3!important;font:bold 10px/1 monospace!important;padding:3px 6px!important;border-radius:4px!important;pointer-events:none!important;border:1px solid #00ffa333!important}"
     ].join("\n");
     document.head.appendChild(css);
 
@@ -46,53 +47,137 @@
         try { var a = new Audio("https://assets.mixkit.co/active_storage/sfx/2869/2869-preview.mp3"); a.volume = 1; a.play().catch(function () { }); } catch (e) { }
     }
 
-    /* ── FIND CARDS ── */
-    function findCards() {
+    /* ── DEBUG BADGE ── */
+    function updateDebug(cardCount, method) {
+        var d = document.getElementById("dt-dbg");
+        if (!d) {
+            d = document.createElement("div");
+            d.id = "dt-dbg";
+            document.body.appendChild(d);
+        }
+        d.textContent = "[DT] " + cardCount + " cards (" + method + ")";
+    }
+
+    /* ── STRATEGY 1: TreeWalker (original) ── */
+    function findCardsByText() {
         var cards = [];
         var seen = new Set();
         var kw = /roulette|roleta|ruleta/i;
 
-        var walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, {
-            acceptNode: function (n) {
-                var tag = n.parentElement ? n.parentElement.tagName : "";
-                if (tag === "SCRIPT" || tag === "STYLE") return NodeFilter.FILTER_REJECT;
-                return NodeFilter.FILTER_ACCEPT;
+        var roots = [document.body];
+        // Also search inside all iframes we can access
+        try {
+            var iframes = document.querySelectorAll("iframe");
+            for (var fi = 0; fi < iframes.length; fi++) {
+                try {
+                    var idoc = iframes[fi].contentDocument;
+                    if (idoc && idoc.body) roots.push(idoc.body);
+                } catch (e) { }
             }
-        });
+        } catch (e) { }
 
-        var node;
-        while ((node = walker.nextNode())) {
-            var txt = node.textContent.trim();
-            if (txt.length < 5 || txt.length > 60 || !kw.test(txt)) continue;
-
-            var el = node.parentElement;
-            var best = null;
-            for (var i = 0; i < 15 && el; i++) {
-                var r = el.getBoundingClientRect();
-                var w = r.width, h = r.height;
-                // Min width 60px, min height 45px explicitly to capture small bottom-bar thumbnails
-                if (w > 60 && w < 400 && h > 45 && h < 350 && h / w > 0.3 && h / w < 3.0) {
-                    best = el;
+        for (var ri = 0; ri < roots.length; ri++) {
+            var root = roots[ri];
+            var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
+                acceptNode: function (n) {
+                    var tag = n.parentElement ? n.parentElement.tagName : "";
+                    if (tag === "SCRIPT" || tag === "STYLE") return NodeFilter.FILTER_REJECT;
+                    return NodeFilter.FILTER_ACCEPT;
                 }
-                el = el.parentElement;
+            });
+
+            var node;
+            while ((node = walker.nextNode())) {
+                var txt = node.textContent.trim();
+                if (txt.length < 5 || txt.length > 60 || !kw.test(txt)) continue;
+
+                var el = node.parentElement;
+                var best = null;
+                for (var i = 0; i < 20 && el; i++) {
+                    var r = el.getBoundingClientRect();
+                    var w = r.width, h = r.height;
+                    if (w > 50 && w < 500 && h > 40 && h < 450) {
+                        best = el;
+                    }
+                    el = el.parentElement;
+                }
+
+                if (!best || best === document.body || best === root || seen.has(best)) continue;
+
+                // Skip header/breadcrumb
+                var br = best.getBoundingClientRect();
+                if (br.top < 80 && br.height < 50) continue;
+
+                seen.add(best);
+
+                var href = "";
+                var cur = best;
+                for (var j = 0; j < 25 && cur; j++) {
+                    if (cur.tagName === "A" && cur.href) { href = cur.href; break; }
+                    cur = cur.parentElement;
+                }
+                if (!href) {
+                    var ia = best.querySelector("a[href]");
+                    if (ia && ia.href) href = ia.href;
+                }
+
+                cards.push({ el: best, name: txt, href: href, key: norm(txt) });
+            }
+        }
+        return cards;
+    }
+
+    /* ── STRATEGY 2: querySelectorAll by text content ── */
+    function findCardsByQuery() {
+        var cards = [];
+        var seen = new Set();
+        var kw = /roulette|roleta|ruleta/i;
+
+        // Find ALL elements with text, check innerText
+        var allEls = document.querySelectorAll("span, div, p, a, h1, h2, h3, h4, h5, h6, li, td, th, label, figcaption");
+        for (var i = 0; i < allEls.length; i++) {
+            var el = allEls[i];
+
+            // Only check direct text (avoid getting parent text)
+            var directText = "";
+            for (var ci = 0; ci < el.childNodes.length; ci++) {
+                if (el.childNodes[ci].nodeType === 3) {
+                    directText += el.childNodes[ci].textContent;
+                }
+            }
+            directText = directText.trim();
+
+            // Also check full innerText for elements with few children
+            var txt = directText;
+            if (!txt && el.children.length < 4) {
+                txt = (el.innerText || "").split("\n")[0].trim();
+            }
+
+            if (!txt || txt.length < 5 || txt.length > 60 || !kw.test(txt)) continue;
+
+            // Walk UP to find card container
+            var best = null;
+            var cur = el;
+            for (var j = 0; j < 20 && cur; j++) {
+                var r = cur.getBoundingClientRect();
+                var w = r.width, h = r.height;
+                if (w > 50 && w < 500 && h > 40 && h < 450) {
+                    best = cur;
+                }
+                cur = cur.parentElement;
             }
 
             if (!best || best === document.body || seen.has(best)) continue;
 
-            // Skip header/breadcrumb (top of page, small height)
             var br = best.getBoundingClientRect();
-            if (br.top < 100 && br.height < 60) continue;
+            if (br.top < 80 && br.height < 50) continue;
 
             seen.add(best);
 
-            // Extract href: walk up to find <a> with /games/ in href
             var href = "";
-            var cur = best;
-            for (var j = 0; j < 20 && cur; j++) {
-                if (cur.tagName === "A" && cur.href) {
-                    href = cur.href;
-                    break;
-                }
+            cur = best;
+            for (var k = 0; k < 25 && cur; k++) {
+                if (cur.tagName === "A" && cur.href) { href = cur.href; break; }
                 cur = cur.parentElement;
             }
             if (!href) {
@@ -102,6 +187,21 @@
 
             cards.push({ el: best, name: txt, href: href, key: norm(txt) });
         }
+        return cards;
+    }
+
+    /* ── COMBINED FIND CARDS ── */
+    function findCards() {
+        var cards = findCardsByText();
+        var method = "tree:" + cards.length;
+
+        if (cards.length === 0) {
+            cards = findCardsByQuery();
+            method = "query:" + cards.length;
+        }
+
+        console.log("[DT] findCards →", method, cards.map(function (c) { return c.name; }));
+        updateDebug(cards.length, method);
         return cards;
     }
 
@@ -126,8 +226,6 @@
 
         beep(name);
 
-        var short = (href || "").replace(/https?:\/\/[^/]+/, "").substring(0, 50);
-
         var box = document.createElement("div");
         box.id = "dt-sig";
         box.innerHTML =
@@ -142,6 +240,7 @@
         requestAnimationFrame(function () { requestAnimationFrame(function () { box.classList.add("on"); }); });
         setTimeout(function () { if (box.parentElement) { box.classList.remove("on"); setTimeout(function () { box.remove(); }, 350); } }, 25000);
     }
+
     /* ── ACK ── */
     document.addEventListener("click", function (e) {
         var t = e.target;
@@ -160,12 +259,10 @@
 
     /* ── TICK ── */
     async function tick() {
-        // --- LOBBY LOGIC ---
         var cards = findCards();
         hasCards = cards.length > 0;
         if (!hasCards) return;
 
-        // Save the real URL map to chrome.storage for the popup
         saveUrlMap(cards);
 
         var st = { rooms: [], threshold: 6 };
@@ -235,5 +332,5 @@
     document.addEventListener("click", function () { }, { once: true });
     setTimeout(tick, 2500);
     setInterval(tick, 3000);
-    console.log("%c[DT] v34.1", "color:#00ffa3;font-weight:bold;font-size:12px;background:#000;padding:2px 6px");
+    console.log("%c[DT] v35.2 LOADED", "color:#00ffa3;font-weight:bold;font-size:14px;background:#000;padding:4px 8px");
 })();
