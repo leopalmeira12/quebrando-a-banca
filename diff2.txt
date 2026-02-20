@@ -1,0 +1,36 @@
+﻿diff --git a/backend/main.py b/backend/main.py
+index 51bfcfe..7421bcf 100644
+--- a/backend/main.py
++++ b/backend/main.py
+@@ -166,8 +166,8 @@ def process_screenshot(base64_image):
+             return [], []
+         
+         # Parse OCR results
++        room_kw = re.compile(r'(roulette|roleta|ruleta)', re.IGNORECASE)
+         num_pattern = re.compile(r'^\s*(\d{1,2})\s*$')
+-        ignore_kw = re.compile(r'(\$|r\$|saldo|aposta|dealer|crupier|betano|live|limite)', re.IGNORECASE)
+         
+         rooms_found = []
+         nums_found = []
+@@ -181,14 +181,14 @@ def process_screenshot(base64_image):
+                 x_center = (bbox[0][0] + bbox[1][0]) / 2
+                 y_center = (bbox[0][1] + bbox[2][1]) / 2
+                 
+-                match = num_pattern.match(text)
+-                if match:
+-                    val = int(match.group(1))
+-                    if 0 <= val <= 36:
+-                        nums_found.append({"val": val, "x": x_center, "y": y_center})
+-                elif len(text) >= 4 and not ignore_kw.search(text):
+-                    # It's not a number, not an ignored UI word, so it must be a Room Title or part of it
++                if len(text) > 4 and room_kw.search(text):
+                     rooms_found.append({"name": text, "x": x_center, "y": y_center, "numbers": []})
++                else:
++                    match = num_pattern.match(text)
++                    if match:
++                        val = int(match.group(1))
++                        if 0 <= val <= 36:
++                            nums_found.append({"val": val, "x": x_center, "y": y_center})
+         
+         # Failsafe: if inside a game room, OCR might just find numbers but no clear title
+         if len(rooms_found) == 0 and len(nums_found) > 0:

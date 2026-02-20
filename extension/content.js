@@ -1,8 +1,8 @@
 /**
- * DOZEN TRACKER v35.2 — BULLETPROOF AURA + SIGNAL
+ * DOZEN TRACKER v36.0 — OMNI-CARD FINDER (AURA IS BACK)
  * 
- * Multi-strategy card finder: TreeWalker + querySelectorAll fallback.
- * Aura works on lobby AND in-game page thumbnails.
+ * Aggressive card finding strategy focusing on Anchors and nested text
+ * to guarantee AURA over both large lobby cards and tiny in-game thumbnails.
  */
 (function () {
     if (window.__DT_ACTIVE) return;
@@ -21,7 +21,7 @@
         ".dt-w{box-shadow:0 0 10px 3px orange!important;border:2px solid orange!important;border-radius:8px!important;box-sizing:border-box!important}",
         ".dt-h{border:3px solid #f00!important;border-radius:8px!important;box-sizing:border-box!important}",
         ".dt-gl{position:absolute!important;inset:0!important;z-index:999999!important;pointer-events:none!important;border-radius:6px!important;animation:dtR .5s infinite!important}",
-        ".dt-bg{position:absolute!important;top:4px!important;left:4px!important;z-index:9999999!important;background:#000e!important;color:#00ffa3!important;font:bold 13px/1 monospace!important;padding:3px 7px!important;border-radius:4px!important;pointer-events:none!important;border:1px solid #00ffa3!important}",
+        ".dt-bg{position:absolute!important;top:4px!important;left:4px!important;z-index:9999999!important;background:#000e!important;color:#00ffa3!important;font:bold 13px/1 monospace!important;padding:3px 7px!important;border-radius:4px!important;pointer-events:none!important;border:1px solid #00ffa3!important;white-space:nowrap!important}",
         ".dt-bg.r{background:#f00!important;color:#fff!important;border-color:#f00!important}",
         ".dt-bg.o{background:#e90!important;color:#fff!important;border-color:orange!important}",
         "#dt-sig{position:fixed!important;bottom:20px!important;right:20px!important;z-index:99999999!important;width:300px!important;background:linear-gradient(135deg,#0d1117 0%,#161b22 100%)!important;border:1px solid #30363d!important;border-left:4px solid #f00!important;border-radius:10px!important;padding:14px 16px!important;font-family:-apple-system,system-ui,sans-serif!important;color:#fff!important;box-shadow:0 8px 32px rgba(0,0,0,.6)!important;opacity:0;transform:translateY(20px) scale(.95);transition:all .35s cubic-bezier(.4,0,.2,1)!important;pointer-events:auto!important}",
@@ -47,165 +47,77 @@
         try { var a = new Audio("https://assets.mixkit.co/active_storage/sfx/2869/2869-preview.mp3"); a.volume = 1; a.play().catch(function () { }); } catch (e) { }
     }
 
-    /* ── DEBUG BADGE ── */
-    function updateDebug(cardCount, method) {
+    function updateDebug(count) {
         var d = document.getElementById("dt-dbg");
-        if (!d) {
-            d = document.createElement("div");
-            d.id = "dt-dbg";
-            document.body.appendChild(d);
-        }
-        d.textContent = "[DT] " + cardCount + " cards (" + method + ")";
+        if (!d) { d = document.createElement("div"); d.id = "dt-dbg"; document.body.appendChild(d); }
+        d.textContent = "[DT] " + count + " CARDS \uD83D\uDD25";
     }
 
-    /* ── STRATEGY 1: TreeWalker (original) ── */
-    function findCardsByText() {
+    /* ── OMNI CARD FINDER ── */
+    function findCards() {
         var cards = [];
         var seen = new Set();
         var kw = /roulette|roleta|ruleta/i;
 
-        var roots = [document.body];
-        // Also search inside all iframes we can access
-        try {
-            var iframes = document.querySelectorAll("iframe");
-            for (var fi = 0; fi < iframes.length; fi++) {
-                try {
-                    var idoc = iframes[fi].contentDocument;
-                    if (idoc && idoc.body) roots.push(idoc.body);
-                } catch (e) { }
-            }
-        } catch (e) { }
+        // ESTRATÉGIA MÁXIMA: Buscar em TODOS os "a" (links de jogos) e imagens ou spans com nome
+        var els = document.querySelectorAll("a, span, div");
 
-        for (var ri = 0; ri < roots.length; ri++) {
-            var root = roots[ri];
-            var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
-                acceptNode: function (n) {
-                    var tag = n.parentElement ? n.parentElement.tagName : "";
-                    if (tag === "SCRIPT" || tag === "STYLE") return NodeFilter.FILTER_REJECT;
-                    return NodeFilter.FILTER_ACCEPT;
-                }
-            });
+        for (var i = 0; i < els.length; i++) {
+            var el = els[i];
 
-            var node;
-            while ((node = walker.nextNode())) {
-                var txt = node.textContent.trim();
-                if (txt.length < 5 || txt.length > 60 || !kw.test(txt)) continue;
+            // Só pegar elements que tem texto direto da sala
+            var txt = el.textContent || "";
+            // Restringe para pegar só as pontas (sem pai gigante pegando a tela toda)
+            if (txt.length < 5 || txt.length > 100 || !kw.test(txt)) continue;
 
-                var el = node.parentElement;
-                var best = null;
-                for (var i = 0; i < 20 && el; i++) {
-                    var r = el.getBoundingClientRect();
-                    var w = r.width, h = r.height;
-                    if (w > 50 && w < 500 && h > 40 && h < 450) {
-                        best = el;
-                    }
-                    el = el.parentElement;
-                }
+            // Para não confundir com cabeçalhos globais, vamos achar o bounding box do elemento
+            var rect = el.getBoundingClientRect();
+            if (rect.width === 0 || rect.height === 0 || rect.top < 60) continue;
 
-                if (!best || best === document.body || best === root || seen.has(best)) continue;
-
-                // Skip header/breadcrumb
-                var br = best.getBoundingClientRect();
-                if (br.top < 80 && br.height < 50) continue;
-
-                seen.add(best);
-
-                var href = "";
-                var cur = best;
-                for (var j = 0; j < 25 && cur; j++) {
-                    if (cur.tagName === "A" && cur.href) { href = cur.href; break; }
-                    cur = cur.parentElement;
-                }
-                if (!href) {
-                    var ia = best.querySelector("a[href]");
-                    if (ia && ia.href) href = ia.href;
-                }
-
-                cards.push({ el: best, name: txt, href: href, key: norm(txt) });
-            }
-        }
-        return cards;
-    }
-
-    /* ── STRATEGY 2: querySelectorAll by text content ── */
-    function findCardsByQuery() {
-        var cards = [];
-        var seen = new Set();
-        var kw = /roulette|roleta|ruleta/i;
-
-        // Find ALL elements with text, check innerText
-        var allEls = document.querySelectorAll("span, div, p, a, h1, h2, h3, h4, h5, h6, li, td, th, label, figcaption");
-        for (var i = 0; i < allEls.length; i++) {
-            var el = allEls[i];
-
-            // Only check direct text (avoid getting parent text)
-            var directText = "";
-            for (var ci = 0; ci < el.childNodes.length; ci++) {
-                if (el.childNodes[ci].nodeType === 3) {
-                    directText += el.childNodes[ci].textContent;
-                }
-            }
-            directText = directText.trim();
-
-            // Also check full innerText for elements with few children
-            var txt = directText;
-            if (!txt && el.children.length < 4) {
-                txt = (el.innerText || "").split("\n")[0].trim();
-            }
-
-            if (!txt || txt.length < 5 || txt.length > 60 || !kw.test(txt)) continue;
-
-            // Walk UP to find card container
-            var best = null;
+            // Busca o pai dele que mais se aproxima de um "Card" / "Thumbnail"
+            // Sem restrição de tamanho mínimo além do trivial 30x30, pra pegar os do rodapé in-game
+            var bestCard = null;
             var cur = el;
-            for (var j = 0; j < 20 && cur; j++) {
+            for (var j = 0; j < 15 && cur && cur !== document.body; j++) {
                 var r = cur.getBoundingClientRect();
                 var w = r.width, h = r.height;
-                if (w > 50 && w < 500 && h > 40 && h < 450) {
-                    best = cur;
+                if (w >= 30 && w <= 600 && h >= 30 && h <= 600) {
+                    bestCard = cur;
                 }
                 cur = cur.parentElement;
             }
 
-            if (!best || best === document.body || seen.has(best)) continue;
+            if (!bestCard || seen.has(bestCard)) continue;
 
-            var br = best.getBoundingClientRect();
-            if (br.top < 80 && br.height < 50) continue;
+            seen.add(bestCard);
 
-            seen.add(best);
-
+            // Acha o link real para aquele card
             var href = "";
-            cur = best;
-            for (var k = 0; k < 25 && cur; k++) {
-                if (cur.tagName === "A" && cur.href) { href = cur.href; break; }
-                cur = cur.parentElement;
-            }
-            if (!href) {
-                var ia = best.querySelector("a[href]");
-                if (ia && ia.href) href = ia.href;
+            if (bestCard.tagName === "A" && bestCard.href) {
+                href = bestCard.href;
+            } else {
+                var innerA = bestCard.querySelector("a[href]");
+                if (innerA) href = innerA.href;
             }
 
-            cards.push({ el: best, name: txt, href: href, key: norm(txt) });
+            // Simplifica o texto (pega a primeira linha útil em uppercase)
+            var lines = txt.split("\n");
+            var cleanName = txt.trim();
+            for (var l = 0; l < lines.length; l++) {
+                if (kw.test(lines[l])) {
+                    cleanName = lines[l].trim(); break;
+                }
+            }
+
+            cards.push({ el: bestCard, name: cleanName, href: href, key: norm(cleanName) });
         }
+
+        console.log("[DT] OmniFinder ->", cards.length, "cards");
+        updateDebug(cards.length);
         return cards;
     }
 
-    /* ── COMBINED FIND CARDS ── */
-    function findCards() {
-        var cards = findCardsByText();
-        var method = "tree:" + cards.length;
-
-        if (cards.length === 0) {
-            cards = findCardsByQuery();
-            method = "query:" + cards.length;
-        }
-
-        console.log("[DT] findCards →", method, cards.map(function (c) { return c.name; }));
-        updateDebug(cards.length, method);
-        return cards;
-    }
-
-    /* ── SAVE URL MAP TO CHROME STORAGE ── */
+    /* ── SALVAR URL PRA EXTENSÃO OUVINTE ── */
     function saveUrlMap(cards) {
         var map = {};
         cards.forEach(function (c) {
@@ -213,12 +125,10 @@
                 map[norm(c.name)] = { name: c.name, url: c.href };
             }
         });
-        try {
-            chrome.storage.local.set({ urlMap: map });
-        } catch (e) { }
+        try { chrome.storage.local.set({ urlMap: map }); } catch (e) { }
     }
 
-    /* ── SIGNAL ── */
+    /* ── POPUP NO CANTO INFERIOR (O AVISO DE DÚZIA) ── */
     function signal(name, count, href) {
         if (!hasCards) return;
         var old = document.getElementById("dt-sig");
@@ -241,7 +151,7 @@
         setTimeout(function () { if (box.parentElement) { box.classList.remove("on"); setTimeout(function () { box.remove(); }, 350); } }, 25000);
     }
 
-    /* ── ACK ── */
+    /* ── AO CLICAR NA AURA VERMELHA: RECONHECER SINAL ── */
     document.addEventListener("click", function (e) {
         var t = e.target;
         while (t && t !== document.body) {
@@ -257,7 +167,7 @@
         }
     }, true);
 
-    /* ── TICK ── */
+    /* ── TICK PRINCIPAL (A CADA 3s) ── */
     async function tick() {
         var cards = findCards();
         hasCards = cards.length > 0;
@@ -265,6 +175,7 @@
 
         saveUrlMap(cards);
 
+        // Comunica com o Python local
         var st = { rooms: [], threshold: 6 };
         try { var r = await fetch(BACKEND + "/roulette/status"); if (r.ok) st = await r.json(); } catch (e) { }
 
@@ -294,6 +205,7 @@
             var badge = document.createElement("div");
             badge.className = "dt-bg";
 
+            // Se for SINAL / AURA VERMELHA
             if (ratio >= 1) {
                 if (ack[bn]) {
                     el.classList.add("dt-w"); badge.className = "dt-bg o"; badge.textContent = "\uD83C\uDFAF " + zz + "x";
@@ -302,9 +214,13 @@
                     var gl = document.createElement("div"); gl.className = "dt-gl"; el.appendChild(gl);
                     signal(c.name, zz, c.href);
                 }
-            } else if (ratio >= 0.6) {
+            }
+            // Se tiver PRÓXIMO do SINAL / AURA LARANJA
+            else if (ratio >= 0.6) {
                 el.classList.add("dt-w"); badge.className = "dt-bg o"; badge.textContent = "\u26A0 " + zz + "x";
-            } else {
+            }
+            // Se tiver monitorando normal / AURA VERDE BRILHANTE
+            else {
                 el.classList.add("dt-a"); badge.textContent = zz + "x";
             }
             el.appendChild(badge);
@@ -332,5 +248,5 @@
     document.addEventListener("click", function () { }, { once: true });
     setTimeout(tick, 2500);
     setInterval(tick, 3000);
-    console.log("%c[DT] v35.2 LOADED", "color:#00ffa3;font-weight:bold;font-size:14px;background:#000;padding:4px 8px");
+    console.log("%c[DT] v36.0 LOADED", "color:#00ffa3;font-weight:bold;font-size:14px;background:#000;padding:4px 8px");
 })();
