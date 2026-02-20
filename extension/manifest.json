@@ -1,0 +1,42 @@
+{
+    "manifest_version": 3,
+    "name": "Dozen Tracker",
+    "version": "34.2",
+    "description": "Monitor profissional sem toast. Alertas vermelhos.",
+    "permissions": [
+        "storage",
+        "activeTab",
+        "tabs",
+        "scripting",
+        "notifications",
+        "alarms"
+    ],
+    "host_permissions": [
+        "*://*.betano.bet.br/*",
+        "*://*.betano.com/*"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*.betano.bet.br/*",
+                "*://*.betano.com/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_idle",
+            "all_frames": true
+        }
+    ],
+    "icons": {
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+    }
+}

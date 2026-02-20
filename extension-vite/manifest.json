@@ -1,0 +1,29 @@
+{
+    "manifest_version": 3,
+    "name": "Sinais Betano Pro - Vite",
+    "version": "1.0.0",
+    "description": "Scraping e IA de sinais para Aviator e JetX na Betano",
+    "permissions": [
+        "storage",
+        "activeTab",
+        "scripting"
+    ],
+    "host_permissions": [
+        "https://www.betano.bet.br/*",
+        "http://localhost:8000/*"
+    ],
+    "action": {
+        "default_popup": "index.html"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.betano.bet.br/casino/games/aviator/*",
+                "https://www.betano.bet.br/casino/crash-games/games/jetx/*"
+            ],
+            "js": [
+                "src/content.ts"
+            ]
+        }
+    ]
+}
