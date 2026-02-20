@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "Dozen Tracker",
-    "version": "35.2",
+    "version": "36.0",
     "description": "Monitor profissional sem toast. Alertas vermelhos.",
     "permissions": [
         "storage",
