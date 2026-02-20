@@ -47,71 +47,60 @@
     }
 
     /* ── FIND CARDS ── */
-    /* ── FIND CARDS ── */
     function findCards() {
         var cards = [];
         var seen = new Set();
+        var kw = /roulette|roleta|ruleta/i;
 
-        // Betano uses images or background images for all lobby cards.
-        // We find all visual images, then walk up to find the card container.
-        var imgs = document.querySelectorAll("img, [style*='background-image']");
+        var walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, {
+            acceptNode: function (n) {
+                var tag = n.parentElement ? n.parentElement.tagName : "";
+                if (tag === "SCRIPT" || tag === "STYLE") return NodeFilter.FILTER_REJECT;
+                return NodeFilter.FILTER_ACCEPT;
+            }
+        });
 
-        for (var i = 0; i < imgs.length; i++) {
-            var el = imgs[i];
+        var node;
+        while ((node = walker.nextNode())) {
+            var txt = node.textContent.trim();
+            if (txt.length < 5 || txt.length > 60 || !kw.test(txt)) continue;
 
-            // Walk up to find the card container layout
+            var el = node.parentElement;
             var best = null;
-            var cur = el;
-            for (var j = 0; j < 15 && cur; j++) {
-                var r = cur.getBoundingClientRect();
+            for (var i = 0; i < 15 && el; i++) {
+                var r = el.getBoundingClientRect();
                 var w = r.width, h = r.height;
-                // Standard casino card proportions
-                if (w > 80 && w < 400 && h > 60 && h < 300) {
-                    best = cur;
+                if (w > 100 && w < 350 && h > 80 && h < 300 && h / w > 0.4 && h / w < 2.5) {
+                    best = el;
                 }
-                cur = cur.parentElement;
+                el = el.parentElement;
             }
 
             if (!best || best === document.body || seen.has(best)) continue;
 
-            // Explicitly skip top header / navigation / breadcrumbs
+            // Skip header/breadcrumb (top of page, small height)
             var br = best.getBoundingClientRect();
-            if (br.top < 120 && br.height < 60) continue;
+            if (br.top < 130 && br.height < 80) continue;
 
             seen.add(best);
 
-            // Prioritize clean image alt-text
-            var name = "";
-            var imgObj = best.querySelector("img");
-            if (imgObj && imgObj.alt) name = imgObj.alt;
-            if (!name && best.getAttribute("aria-label")) name = best.getAttribute("aria-label");
-            if (!name && best.title) name = best.title;
-
-            // Fallback to text inside the card
-            if (!name) {
-                var texts = best.innerText.split("\n");
-                for (var t = 0; t < texts.length; t++) {
-                    var line = texts[t].trim();
-                    if (line.length > 4 && line.length < 50 && !line.includes("R$") && isNaN(parseInt(line))) {
-                        name = line;
-                        break;
-                    }
+            // Extract href: walk up to find <a> with /games/ in href
+            var href = "";
+            var cur = best;
+            for (var j = 0; j < 20 && cur; j++) {
+                if (cur.tagName === "A" && cur.href) {
+                    href = cur.href;
+                    break;
                 }
+                cur = cur.parentElement;
+            }
+            if (!href) {
+                var ia = best.querySelector("a[href]");
+                if (ia && ia.href) href = ia.href;
             }
 
-            if (name) {
-                // Attempt to resolve url if it's there
-                var href = "";
-                if (best.tagName === "A" && best.href) href = best.href;
-                if (!href) {
-                    var a = best.querySelector("a[href]");
-                    if (a) href = a.href;
-                }
-
-                cards.push({ el: best, name: name.trim(), href: href, key: norm(name) });
-            }
+            cards.push({ el: best, name: txt, href: href, key: norm(txt) });
         }
-
         return cards;
     }
 
@@ -153,6 +142,21 @@
         setTimeout(function () { if (box.parentElement) { box.classList.remove("on"); setTimeout(function () { box.remove(); }, 350); } }, 25000);
     }
 
+    /* ── IN-GAME HUD ── */
+    var isGame = window.location.href.includes("/games/") || window.location.href.includes("/tables/");
+    var inGameHud = null;
+
+    function buildInGameHud() {
+        inGameHud = document.createElement("div");
+        inGameHud.id = "dt-ingame-hud";
+        inGameHud.style.cssText = "position:fixed;top:15px;left:50%;transform:translateX(-50%);z-index:99999999;background:rgba(10,14,20,0.92);border:2px solid #1e2530;padding:12px 24px;border-radius:12px;color:#fff;font-family:-apple-system,system-ui,sans-serif;text-align:center;box-shadow:0 10px 30px rgba(0,0,0,0.5);backdrop-filter:blur(10px);pointer-events:none;min-width:220px;transition:all 0.3s ease;";
+        inGameHud.innerHTML =
+            '<div style="font-size:9px;color:#00ffa3;letter-spacing:1px;text-transform:uppercase;margin-bottom:6px;font-weight:700">Vision AI: Analyzador</div>' +
+            '<div id="dt-hud-st" style="font-size:18px;font-weight:900;letter-spacing:0.5px;text-transform:uppercase;transition:all 0.3s">Avaliando...</div>' +
+            '<div id="dt-hud-zz" style="font-size:11px;color:#8b949e;margin-top:6px;font-weight:500">-</div>';
+        document.body.appendChild(inGameHud);
+    }
+
     /* ── ACK ── */
     document.addEventListener("click", function (e) {
         var t = e.target;
@@ -171,6 +175,51 @@
 
     /* ── TICK ── */
     async function tick() {
+        // --- IN GAME HUD LOGIC ---
+        if (isGame) {
+            if (!inGameHud) buildInGameHud();
+
+            var stG = { rooms: [], threshold: 6 };
+            try { var resG = await fetch(BACKEND + "/roulette/status"); if (resG.ok) stG = await resG.json(); } catch (e) { }
+
+            var thG = stG.threshold || 6;
+            var roomsG = stG.rooms || [];
+            var title = norm(document.title) || norm(location.href);
+            var activeRoom = null;
+
+            // Try to perfectly match current room from title/url
+            for (var i = 0; i < roomsG.length; i++) {
+                var rn = norm(roomsG[i].room_name);
+                if (title.includes(rn) || rn.includes(title)) { activeRoom = roomsG[i]; break; }
+            }
+            // If completely blind but OCR found "Current Room" (fallback created dynamically by backend)
+            if (!activeRoom && roomsG.length > 0) {
+                // In a single-room context, assume the most active or "Current Room" is what we are looking at
+                roomsG.sort(function (a, b) { return (b.zigzag || 0) - (a.zigzag || 0); });
+                activeRoom = roomsG[0];
+            }
+
+            if (activeRoom) {
+                var zz = activeRoom.zigzag || 0;
+                var ratio = zz / thG;
+                var lbl = "ESPERAR \u23F3";
+                var col = "#fff";
+                var glow = "none";
+                var bcol = "#1e2530";
+
+                if (ratio >= 1) { lbl = "ENTRAR AGORA \uD83C\uDFAF"; col = "#ff4757"; glow = "0 0 15px rgba(255,71,87,0.6)"; bcol = "#ff4757"; }
+                else if (ratio >= 0.6) { lbl = "ATEN\u00C7\u00C3O \u26A0"; col = "#ffa502"; bcol = "#ffa502"; }
+
+                inGameHud.style.borderColor = bcol;
+                inGameHud.style.boxShadow = ratio >= 1 ? "0 10px 40px rgba(255,71,87,0.3)" : "0 10px 30px rgba(0,0,0,0.5)";
+                document.getElementById("dt-hud-st").innerHTML = '<span style="color:' + col + ';text-shadow:' + glow + '">' + lbl + '</span>';
+                document.getElementById("dt-hud-zz").textContent = "Zigzag Atual: " + zz + "x (Gatilho: " + thG + ")";
+
+                if (ratio >= 1) beep("ingame_" + activeRoom.room_name);
+            }
+            return; // Skip lobby mapping when in game!
+        }
+
         // --- LOBBY LOGIC ---
         var cards = findCards();
         hasCards = cards.length > 0;
