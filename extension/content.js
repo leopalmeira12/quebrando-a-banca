@@ -215,9 +215,8 @@
                 document.getElementById("dt-hud-st").innerHTML = '<span style="color:' + col + ';text-shadow:' + glow + '">' + lbl + '</span>';
                 document.getElementById("dt-hud-zz").textContent = "Zigzag Atual: " + zz + "x (Gatilho: " + thG + ")";
 
-                if (ratio >= 1) beep("ingame_" + activeRoom.room_name);
             }
-            return; // Skip lobby mapping when in game!
+            // Do not return here. Betano often shows lobby cards underneath the active game video.
         }
 
         // --- LOBBY LOGIC ---
