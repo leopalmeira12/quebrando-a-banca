@@ -70,7 +70,8 @@
             for (var i = 0; i < 15 && el; i++) {
                 var r = el.getBoundingClientRect();
                 var w = r.width, h = r.height;
-                if (w > 100 && w < 350 && h > 80 && h < 300 && h / w > 0.4 && h / w < 2.5) {
+                // Min width 60px, min height 45px explicitly to capture small bottom-bar thumbnails
+                if (w > 60 && w < 400 && h > 45 && h < 350 && h / w > 0.3 && h / w < 3.0) {
                     best = el;
                 }
                 el = el.parentElement;
@@ -80,7 +81,7 @@
 
             // Skip header/breadcrumb (top of page, small height)
             var br = best.getBoundingClientRect();
-            if (br.top < 130 && br.height < 80) continue;
+            if (br.top < 100 && br.height < 60) continue;
 
             seen.add(best);
 
